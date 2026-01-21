@@ -1,0 +1,2 @@
+Nella cartella /img è presente l’immagine di copertina usata nella hero (hero.webp).
+Consigliata una risoluzione almeno 1920×1080 per mantenere buona qualità su schermi grandi.
