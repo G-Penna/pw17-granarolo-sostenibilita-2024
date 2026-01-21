@@ -11,7 +11,7 @@ https://g-penna.github.io/pw17-granarolo-sostenibilita-2024/
 - JavaScript (interazioni base)
 
 ## Avvio in locale
-Apri `index.html` con un browser (consigliato) oppure usa un server locale (es. VS Code Live Server).
+Apri `index.html` con un browser oppure usa un server locale (es. VS Code Live Server).
 
 ## Struttura progetto
 - `index.html` — pagina principale
