@@ -5,6 +5,8 @@ Pagina web realizzata per Project Work universitario: sintesi didattica (non uff
 ## Demo
 https://g-penna.github.io/pw17-granarolo-sostenibilita-2024/
 
+![Anteprima del sito](img/preview.png)
+
 ## Tecnologie
 - HTML5
 - CSS3 (responsive)
