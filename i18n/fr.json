@@ -1,0 +1,278 @@
+{
+  "meta": {
+    "title": "Granarolo Durabilité 2024 - Synthèse",
+    "description": "Synthèse pédagogique (non officielle) du Rapport de durabilité Granarolo 2024 : chaîne d’approvisionnement, environnement, bien-être animal, personnes, communauté, innovation et réduction du gaspillage."
+  },
+  "skip": "Aller au contenu",
+  "brand": {
+    "sub": "Durabilité 2024"
+  },
+  "ui": {
+    "menuOpen": "Ouvrir le menu",
+    "menuClose": "Fermer le menu"
+  },
+  "aria": {
+    "brandHome": "Recharger la page et revenir en haut",
+    "mainNav": "Navigation principale",
+    "mobileNav": "Menu mobile",
+    "openPrefs": "Ouvrir les préférences",
+    "menuOpen": "Ouvrir le menu",
+    "menuClose": "Fermer le menu",
+    "langBlock": "Langue",
+    "langSelect": "Choisir la langue",
+    "hero": "Introduction",
+    "heroHint": "Aller à la section À propos",
+    "timeline": "Chaîne du lait (frise)",
+    "downloadSteps": "Contenus principaux",
+    "quickLinks": "Liens rapides",
+    "csrLink": "Ouvrir la page CSR Report 2024",
+    "repoLink": "Ouvrir le dépôt GitHub du projet",
+    "closeModal": "Fermer la fenêtre",
+    "toTop": "Retour en haut"
+  },
+
+  "nav": {
+    "about": "À propos",
+    "supply": "Chaîne",
+    "pillars": "Piliers",
+    "areas": "Actions",
+    "numbers": "Chiffres",
+    "downloadCta": "Télécharger",
+    "prefs": "Préférences"
+  },
+
+  "lang": {
+    "label": "Langue"
+  },
+
+  "hero": {
+    "pill": "Synthèse non officielle à des fins pédagogiques",
+    "title": "Rapport de durabilité<br><span>Granarolo 2024</span>",
+    "subtitle": "Lecture guidée des thèmes clés : chaîne, environnement, bien-être animal, personnes et communauté, innovation et réduction du gaspillage.",
+    "btnDownload": "Télécharger le rapport 2024 (PDF)",
+    "btnDiscover": "Voir la synthèse"
+  },
+
+  "about": {
+    "title": "Qui est Granarolo",
+    "p1": "Granarolo est l’un des principaux groupes laitiers italiens, né d’une coopérative d’éleveurs et développé comme une filière intégrée, de la production de lait à la ferme jusqu’à la transformation et la distribution des produits finis.",
+    "cards": {
+      "env": {
+        "title": "Impact environnemental",
+        "p": "Suivi des émissions, de l’énergie et de l’eau, avec des actions d’efficacité et des solutions à moindre impact."
+      },
+      "people": {
+        "title": "Personnes et travail",
+        "p": "Sécurité, formation continue et initiatives de bien-être : la valeur du travail se construit avec des règles claires et de l’attention."
+      },
+      "community": {
+        "title": "Territoire et communauté",
+        "p": "Partenariats locaux, filière responsable et projets sur le territoire : la durabilité est aussi sociale et économique."
+      }
+    }
+  },
+
+  "supply": {
+    "title": "Notre filière du lait",
+    "p1": "Schéma synthétique de la filière intégrée : élevage, collecte, transformation et distribution, avec contrôles et traçabilité aux étapes principales.",
+    "steps": {
+      "farmers": {
+        "title": "Éleveurs",
+        "p": "Filière coopérative Granlatte (475 éleveurs), avec des standards partagés et des programmes d’amélioration."
+      },
+      "collect": {
+        "title": "Collecte",
+        "p": "Collecte et transport réfrigéré, avec vérifications de conformité et contrôles à l’entrée."
+      },
+      "plants": {
+        "title": "Sites",
+        "p": "Transformation et contrôles qualité tout au long du processus, avec procédures et suivi."
+      },
+      "distribution": {
+        "title": "Distribution",
+        "p": "Gestion logistique et distribution vers les canaux commerciaux, avec traçabilité des flux."
+      },
+      "consumer": {
+        "title": "Consommateur",
+        "p": "Informations sur l’étiquette et traçabilité pour soutenir des choix plus éclairés."
+      }
+    },
+    "note": "Référence : Rapport de durabilité 2024 — description de la filière et modèle coopératif Granlatte–Granarolo."
+  },
+
+  "pillars": {
+    "title": "Piliers de la durabilité",
+    "p1": "Quatre axes qui résument les principales initiatives : environnement, bien-être animal, personnes et emballages.",
+    "env": {
+      "title": "Environnement et énergie",
+      "p": "Réduction des émissions, efficacité des installations et augmentation des sources renouvelables.",
+      "chip1": "-34 000 t CO₂ (2023–2027)",
+      "chip2": "10 % renouvelables (2023–2027)"
+    },
+    "animal": {
+      "title": "Bien-être animal",
+      "p": "Protocoles partagés, contrôles vétérinaires et formation : prévention et qualité à la ferme.",
+      "chip1": "100 % fermes certifiées",
+      "chip2": "Classyfarm + Bonlatte"
+    },
+    "people": {
+      "title": "Personnes et travail",
+      "p": "Sécurité, formation, égalité et initiatives de bien-être pour les salariés.",
+      "chip1": "2 532 salariés (2024)",
+      "chip2": "Cert. UNI/PdR 125:2022 (2024)"
+    },
+    "pack": {
+      "title": "Emballages et gaspillage",
+      "p": "Emballages plus recyclables, moins de plastique vierge et actions contre le gaspillage alimentaire.",
+      "chip1": "-7 870 kg matériaux (2024)",
+      "chip2": "R-PET 25–50 % sur les bouteilles"
+    },
+    "note": "Données et objectifs synthétisés à partir du Rapport de durabilité 2024 du Groupe Granarolo."
+  },
+
+  "areas": {
+    "title": "Axes d’action",
+    "p1": "Objectifs et état d’avancement, tirés du Rapport de durabilité 2024.",
+    "table": {
+      "title": "Objectifs stratégiques 2024",
+      "r1": {
+        "title": "Biométhane de filière",
+        "p": "Projet de valorisation des effluents d’élevage et de réduction des émissions sur la filière.",
+        "badge": "En cours"
+      },
+      "r2": {
+        "title": "Plateforme de données (xFarm)",
+        "p": "Collecte et suivi des données environnementales et de gestion pour améliorer la traçabilité et les performances.",
+        "badge": "Avancé"
+      },
+      "r3": {
+        "title": "Bien-être et certifications",
+        "p": "Standards partagés et audits (Classyfarm/Bonlatte) pour évaluer et améliorer les conditions d’élevage.",
+        "badge": "Atteint"
+      },
+      "r4": {
+        "title": "Emballages : réduction",
+        "p": "Actions sur le poids et les matériaux afin de réduire plastique et carton en 2024.",
+        "badge": "Atteint"
+      }
+    }
+  },
+
+  "sdg": {
+    "title": "Objectifs de développement durable",
+    "s3": {
+      "title": "Bonne santé et bien-être",
+      "p": "Qualité et sécurité alimentaires, nutrition équilibrée et accessible."
+    },
+    "s12": {
+      "title": "Consommation responsable",
+      "p": "Économie circulaire, moins de gaspillage et emballages plus durables."
+    },
+    "s13": {
+      "title": "Lutte contre le changement climatique",
+      "p": "Réduction des émissions et mesures d’adaptation sur l’ensemble de la filière."
+    }
+  },
+
+  "numbers": {
+    "title": "Chiffres clés 2024",
+    "p1": "Ces données synthétisent certains indicateurs du Rapport de durabilité 2024 du Groupe Granarolo.",
+    "cards": {
+      "c1": {
+        "sr": "Éleveurs adhérents Granlatte",
+        "p": "Éleveurs<br>Granlatte"
+      },
+      "c2": {
+        "sr": "Sites en Italie",
+        "p": "Sites<br>en Italie"
+      },
+      "c3": {
+        "sr": "Lait acheté aux adhérents Granlatte",
+        "p": "Lait acheté<br>aux adhérents"
+      },
+      "c4": {
+        "sr": "Biberons collectés et recyclés",
+        "p": "Biberons<br>recyclés"
+      }
+    },
+    "focus": {
+      "f1": {
+        "title": "Filière coopérative",
+        "p": "Part du lait acheté aux adhérents Granlatte sur l’ensemble des approvisionnements."
+      },
+      "f2": {
+        "title": "Moins de matériaux",
+        "p": "Réduction globale du plastique et du carton sur les emballages (2024)."
+      },
+      "f3": {
+        "title": "CO₂ évité (énergie)",
+        "p": "Émissions évitées grâce aux Garanties d’Origine pour l’électricité (market-based)."
+      }
+    },
+    "note": "Source : Rapport de durabilité 2024 — Groupe Granarolo."
+  },
+
+  "download": {
+    "title": "Télécharger les documents",
+    "p1": "Liens vers les documents officiels du CSR Report 2024. Le contenu de cette page est une synthèse pédagogique basée sur les sources indiquées, sélectionnée pour mettre en évidence quelques indicateurs et projets clés.",
+    "btnFull": "Rapport complet (PDF)",
+    "btnShort": "Synthèse (PDF)",
+    "steps": {
+      "s1": "Environnement & énergie",
+      "s2": "Bien-être animal",
+      "s3": "Personnes & communauté"
+    },
+    "foot": "Les documents s’ouvrent sur le site officiel de Granarolo."
+  },
+
+  "footer": {
+    "brand": "Granarolo <span>Durabilité</span>",
+    "p1": "Page de synthèse non officielle réalisée pour un project work universitaire, basée sur le CSR Report 2024 et le Rapport de durabilité.",
+    "linksTitle": "Liens utiles",
+    "areasShort": "Actions",
+    "numbersShort": "Chiffres",
+    "sourcesTitle": "Sources et crédits",
+    "sourcesHtml": "<strong>Sources :</strong><br><a class=\"footer__link\" href=\"https://www.gruppogranarolo.it/chi-siamo/csr-report-2024\" target=\"_blank\" rel=\"noopener noreferrer\">Page CSR Report 2024</a><br><a class=\"footer__link\" href=\"https://www.gruppogranarolo.it/system/granarolo_corporate/attachments/data/000/006/091/original/IT-Granarolo-BS2024-21-10-25-singole-web.pdf?1761033984\" target=\"_blank\" rel=\"noopener noreferrer\">Rapport de durabilité 2024 (PDF)</a><br><a class=\"footer__link\" href=\"https://www.gruppogranarolo.it/system/granarolo_corporate/attachments/data/000/004/040/original/IT-sintesi-BS-2024-v4-0-singole.pdf?1753696091\" target=\"_blank\" rel=\"noopener noreferrer\">Synthèse du Rapport 2024 (PDF)</a>",
+    "heroCreditHtml": "<strong>Crédit image hero :</strong> <a class=\"footer__link\" href=\"https://it.freepik.com/foto-gratuito/vista-laterale-donna-sorridente-che-accarezza-la-mucca_29301267.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Freepik</a>.",
+    "repoHtml": "<strong>Dépôt :</strong> <a class=\"footer__link\" href=\"https://github.com/G-Penna/pw17-granarolo-sostenibilita-2024\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub (code source)</a>",
+    "bottom": "© 2026 · Synthèse pédagogique non officielle.<span aria-hidden=\"true\"> · </span><a class=\"footer__link\" href=\"#privacy\" id=\"openPrivacy\" data-modal-open=\"privacy\">Confidentialité & cookies</a><span aria-hidden=\"true\"> · </span><a class=\"footer__link\" href=\"#preferenze\" id=\"openPrefs\" data-modal-open=\"prefs\">Préférences</a>",
+    "privacy": "Confidentialité & cookies",
+    "prefs": "Préférences"
+  },
+
+  "privacy": {
+    "title": "Confidentialité & cookies",
+    "p1": "Cette page n’utilise pas de cookies de profilage et ne fait pas de suivi publicitaire. Des cookies techniques peuvent être générés par le navigateur pour assurer le bon fonctionnement de la navigation.",
+    "p2": "Des ressources sont chargées depuis des fournisseurs externes (par ex. polices et bibliothèques CSS) : ces requêtes peuvent transmettre des données techniques (par ex. adresse IP, user agent) à leurs domaines respectifs.",
+    "p3": "La page contient aussi des liens vers des sites tiers (Granarolo, Freepik, GitHub) : en ouvrant ces liens, les politiques de confidentialité de ces sites s’appliquent.",
+    "updatedLabel": "Dernière mise à jour :"
+  },
+
+  "prefs": {
+    "title": "Préférences",
+    "p1": "Les préférences sont enregistrées <strong>uniquement</strong> sur demande explicite, sur cet appareil (localStorage). Elles ne sont envoyées à aucun serveur.",
+    "themeLegend": "Thème",
+    "theme": {
+      "auto": "Automatique (système)",
+      "light": "Clair",
+      "dark": "Sombre"
+    },
+    "langLegend": "Langue",
+    "lang": {
+      "it": "Italiano",
+      "en": "English",
+      "es": "Español",
+      "fr": "Français",
+      "de": "Deutsch"
+    },
+    "textLarge": "Texte plus grand",
+    "highContrast": "Contraste élevé",
+    "reduceMotion": "Réduire les animations (en plus du système)",
+    "reset": "Réinitialiser",
+    "save": "Enregistrer"
+  },
+
+  "common": {
+    "close": "Fermer"
+  }
+}

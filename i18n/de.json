@@ -1,0 +1,278 @@
+{
+  "meta": {
+    "title": "Granarolo Nachhaltigkeit 2024 - Überblick",
+    "description": "Didaktische (inoffizielle) Zusammenfassung des Granarolo-Nachhaltigkeitsberichts 2024: Lieferkette, Umwelt, Tierwohl, Menschen, Gemeinschaft, Innovation und Abfallreduzierung."
+  },
+  "skip": "Zum Inhalt springen",
+  "brand": {
+    "sub": "Nachhaltigkeit 2024"
+  },
+  "ui": {
+    "menuOpen": "Menü öffnen",
+    "menuClose": "Menü schließen"
+  },
+  "aria": {
+    "brandHome": "Seite neu laden und nach oben",
+    "mainNav": "Hauptnavigation",
+    "mobileNav": "Mobiles Menü",
+    "openPrefs": "Einstellungen öffnen",
+    "menuOpen": "Menü öffnen",
+    "menuClose": "Menü schließen",
+    "langBlock": "Sprache",
+    "langSelect": "Sprache wählen",
+    "hero": "Einführung",
+    "heroHint": "Zur Über-uns-Sektion",
+    "timeline": "Milch-Lieferkette (Timeline)",
+    "downloadSteps": "Hauptinhalte",
+    "quickLinks": "Schnelllinks",
+    "csrLink": "CSR-Report-2024-Seite öffnen",
+    "repoLink": "GitHub-Repository des Projekts öffnen",
+    "closeModal": "Dialog schließen",
+    "toTop": "Nach oben"
+  },
+
+  "nav": {
+    "about": "Über uns",
+    "supply": "Kette",
+    "pillars": "Säulen",
+    "areas": "Aktionen",
+    "numbers": "Zahlen",
+    "downloadCta": "Download",
+    "prefs": "Prefs"
+  },
+
+  "lang": {
+    "label": "Sprache"
+  },
+
+  "hero": {
+    "pill": "Inoffizielle didaktische Zusammenfassung",
+    "title": "Nachhaltigkeitsbericht<br><span>Granarolo 2024</span>",
+    "subtitle": "Geführter Überblick über zentrale Themen: Lieferkette, Umwelt, Tierwohl, Menschen und Gemeinschaft, Innovation und Abfallreduzierung.",
+    "btnDownload": "Bericht 2024 herunterladen (PDF)",
+    "btnDiscover": "Übersicht ansehen"
+  },
+
+  "about": {
+    "title": "Wer ist Granarolo",
+    "p1": "Granarolo ist einer der führenden italienischen Molkereikonzerne. Das Unternehmen entstand aus einer Genossenschaft von Landwirten und entwickelte sich zu einer integrierten Lieferkette – von der Milchproduktion auf den Höfen über die Verarbeitung bis zur Distribution der Endprodukte.",
+    "cards": {
+      "env": {
+        "title": "Umweltauswirkungen",
+        "p": "Monitoring von Emissionen sowie Energie- und Wasserverbrauch, mit Effizienzmaßnahmen und Lösungen mit geringerem Impact."
+      },
+      "people": {
+        "title": "Menschen und Arbeit",
+        "p": "Sicherheit, kontinuierliche Weiterbildung und Welfare-Initiativen: Wert entsteht durch klare Regeln und Aufmerksamkeit."
+      },
+      "community": {
+        "title": "Region und Gemeinschaft",
+        "p": "Lokale Kooperationen, verantwortungsvolle Lieferkette und Projekte vor Ort – Nachhaltigkeit ist auch sozial und wirtschaftlich."
+      }
+    }
+  },
+
+  "supply": {
+    "title": "Unsere Milch-Lieferkette",
+    "p1": "Kompakter Überblick über die integrierte Kette: Landwirtschaft, Sammlung, Verarbeitung und Distribution – mit Kontrollen und Rückverfolgbarkeit in den wichtigsten Schritten.",
+    "steps": {
+      "farmers": {
+        "title": "Landwirte",
+        "p": "Genossenschaftliche Granlatte-Lieferkette (475 Landwirte) mit gemeinsamen Standards und Verbesserungsprogrammen."
+      },
+      "collect": {
+        "title": "Sammlung",
+        "p": "Sammlung und gekühlter Transport mit Konformitätsprüfungen und Eingangskontrollen."
+      },
+      "plants": {
+        "title": "Werke",
+        "p": "Verarbeitung und Qualitätskontrollen entlang des Produktionsprozesses mit Verfahren und Monitoring."
+      },
+      "distribution": {
+        "title": "Distribution",
+        "p": "Logistik und Verteilung an Vertriebskanäle mit Rückverfolgbarkeit der Flüsse."
+      },
+      "consumer": {
+        "title": "Verbraucher",
+        "p": "Kennzeichnung und Rückverfolgbarkeit zur Unterstützung bewussterer Entscheidungen."
+      }
+    },
+    "note": "Referenz: Nachhaltigkeitsbericht 2024 — Beschreibung der Lieferkette und des genossenschaftlichen Granlatte–Granarolo-Modells."
+  },
+
+  "pillars": {
+    "title": "Nachhaltigkeitssäulen",
+    "p1": "Vier Bereiche fassen die wichtigsten Initiativen zusammen: Umwelt, Tierwohl, Menschen und Verpackung.",
+    "env": {
+      "title": "Umwelt und Energie",
+      "p": "Weniger Emissionen, effizientere Anlagen und mehr erneuerbare Quellen.",
+      "chip1": "-34.000 t CO₂ (2023–2027)",
+      "chip2": "10 % Erneuerbare (2023–2027)"
+    },
+    "animal": {
+      "title": "Tierwohl",
+      "p": "Gemeinsame Protokolle, veterinärmedizinische Kontrollen und Training: Prävention und Qualität auf dem Hof.",
+      "chip1": "100 % zertifizierte Betriebe",
+      "chip2": "Classyfarm + Bonlatte"
+    },
+    "people": {
+      "title": "Menschen und Arbeit",
+      "p": "Sicherheit, Training, Chancengleichheit und Welfare-Initiativen zur Unterstützung der Mitarbeitenden.",
+      "chip1": "2.532 Mitarbeitende (2024)",
+      "chip2": "Zert. UNI/PdR 125:2022 (2024)"
+    },
+    "pack": {
+      "title": "Verpackung und Abfall",
+      "p": "Besser recycelbare Verpackungen, weniger Neuplastik und Initiativen gegen Lebensmittelverschwendung.",
+      "chip1": "-7.870 kg Materialien (2024)",
+      "chip2": "R-PET 25–50 % bei Flaschen"
+    },
+    "note": "Zahlen und Ziele sind aus dem Nachhaltigkeitsbericht 2024 der Granarolo-Gruppe zusammengefasst."
+  },
+
+  "areas": {
+    "title": "Handlungsfelder",
+    "p1": "Kurz gefasste Ziele und Fortschrittsstand, abgeleitet aus dem Nachhaltigkeitsbericht 2024.",
+    "table": {
+      "title": "Strategische Ziele 2024",
+      "r1": {
+        "title": "Biomethan (Lieferkette)",
+        "p": "Projekt zur Verwertung von Wirtschaftsdüngern und zur Emissionsreduktion entlang der Lieferkette.",
+        "badge": "Laufend"
+      },
+      "r2": {
+        "title": "Datenplattform (xFarm)",
+        "p": "Erfassung und Monitoring von Umwelt- und Betriebsdaten, um Rückverfolgbarkeit und Performance zu verbessern.",
+        "badge": "Weit fortgeschritten"
+      },
+      "r3": {
+        "title": "Tierwohl & Zertifikate",
+        "p": "Gemeinsame Standards und Audits (Classyfarm/Bonlatte) zur Bewertung und Verbesserung der Haltungsbedingungen.",
+        "badge": "Erreicht"
+      },
+      "r4": {
+        "title": "Verpackung: weniger Material",
+        "p": "Maßnahmen an Gewicht und Materialmix, um Kunststoff und Karton 2024 zu reduzieren.",
+        "badge": "Erreicht"
+      }
+    }
+  },
+
+  "sdg": {
+    "title": "Ziele für nachhaltige Entwicklung",
+    "s3": {
+      "title": "Gesundheit und Wohlergehen",
+      "p": "Lebensmittelqualität und -sicherheit, ausgewogene und zugängliche Ernährung."
+    },
+    "s12": {
+      "title": "Nachhaltiger Konsum",
+      "p": "Kreislaufwirtschaft, weniger Abfall und nachhaltigere Verpackungen."
+    },
+    "s13": {
+      "title": "Klimaschutz",
+      "p": "Emissionsreduktion und Anpassungsmaßnahmen entlang der Lieferkette."
+    }
+  },
+
+  "numbers": {
+    "title": "Kennzahlen 2024",
+    "p1": "Diese Werte fassen ausgewählte Indikatoren aus dem Nachhaltigkeitsbericht 2024 der Granarolo-Gruppe zusammen.",
+    "cards": {
+      "c1": {
+        "sr": "Granlatte-Mitgliedsbetriebe",
+        "p": "Mitglieder<br>Granlatte"
+      },
+      "c2": {
+        "sr": "Werke in Italien",
+        "p": "Werke<br>in Italien"
+      },
+      "c3": {
+        "sr": "Milch von Granlatte-Mitgliedern",
+        "p": "Milch von<br>Mitgliedern"
+      },
+      "c4": {
+        "sr": "Gesammelte und recycelte Babyflaschen",
+        "p": "Babyflaschen<br>recycelt"
+      }
+    },
+    "focus": {
+      "f1": {
+        "title": "Genossenschaftliche Kette",
+        "p": "Anteil der von Granlatte-Mitgliedern gekauften Milch am gesamten Bezug."
+      },
+      "f2": {
+        "title": "Weniger Material",
+        "p": "Gesamtreduktion von Kunststoff und Karton in Verpackungen (2024)."
+      },
+      "f3": {
+        "title": "Vermiedene CO₂ (Energie)",
+        "p": "Vermiedene Emissionen durch Herkunftsnachweise für Strom (market-based)."
+      }
+    },
+    "note": "Quelle: Nachhaltigkeitsbericht 2024 — Granarolo-Gruppe."
+  },
+
+  "download": {
+    "title": "Dokumente herunterladen",
+    "p1": "Links zu den offiziellen CSR-Report-2024-Dokumenten. Diese Seite ist eine didaktische Zusammenfassung auf Basis der angegebenen Quellen, ausgewählt, um einige Kennzahlen und Schlüsselprojekte hervorzuheben.",
+    "btnFull": "Vollständiger Bericht (PDF)",
+    "btnShort": "Kurzfassung (PDF)",
+    "steps": {
+      "s1": "Umwelt & Energie",
+      "s2": "Tierwohl",
+      "s3": "Menschen & Community"
+    },
+    "foot": "Die Dokumente öffnen sich auf der offiziellen Granarolo-Website."
+  },
+
+  "footer": {
+    "brand": "Granarolo <span>Nachhaltigkeit</span>",
+    "p1": "Inoffizielle Übersichtsseite für ein universitäreres Project Work, basierend auf dem CSR Report 2024 und dem Nachhaltigkeitsbericht.",
+    "linksTitle": "Nützliche Links",
+    "areasShort": "Aktionen",
+    "numbersShort": "Zahlen",
+    "sourcesTitle": "Quellen und Credits",
+    "sourcesHtml": "<strong>Quellen:</strong><br><a class=\"footer__link\" href=\"https://www.gruppogranarolo.it/chi-siamo/csr-report-2024\" target=\"_blank\" rel=\"noopener noreferrer\">CSR-Report-2024-Seite</a><br><a class=\"footer__link\" href=\"https://www.gruppogranarolo.it/system/granarolo_corporate/attachments/data/000/006/091/original/IT-Granarolo-BS2024-21-10-25-singole-web.pdf?1761033984\" target=\"_blank\" rel=\"noopener noreferrer\">Nachhaltigkeitsbericht 2024 (PDF)</a><br><a class=\"footer__link\" href=\"https://www.gruppogranarolo.it/system/granarolo_corporate/attachments/data/000/004/040/original/IT-sintesi-BS-2024-v4-0-singole.pdf?1753696091\" target=\"_blank\" rel=\"noopener noreferrer\">Kurzfassung Nachhaltigkeitsbericht 2024 (PDF)</a>",
+    "heroCreditHtml": "<strong>Hero-Bild:</strong> <a class=\"footer__link\" href=\"https://it.freepik.com/foto-gratuito/vista-laterale-donna-sorridente-che-accarezza-la-mucca_29301267.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Freepik</a>.",
+    "repoHtml": "<strong>Repository:</strong> <a class=\"footer__link\" href=\"https://github.com/G-Penna/pw17-granarolo-sostenibilita-2024\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub (Quellcode)</a>",
+    "bottom": "© 2026 · Inoffizielle didaktische Zusammenfassung.<span aria-hidden=\"true\"> · </span><a class=\"footer__link\" href=\"#privacy\" id=\"openPrivacy\" data-modal-open=\"privacy\">Datenschutz & Cookies</a><span aria-hidden=\"true\"> · </span><a class=\"footer__link\" href=\"#preferenze\" id=\"openPrefs\" data-modal-open=\"prefs\">Einstellungen</a>",
+    "privacy": "Datenschutz & Cookies",
+    "prefs": "Einstellungen"
+  },
+
+  "privacy": {
+    "title": "Datenschutz & Cookies",
+    "p1": "Diese Seite verwendet keine Profiling-Cookies und führt kein Werbetracking durch. Technische Cookies können vom Browser für eine korrekte Navigation erzeugt werden.",
+    "p2": "Es werden Ressourcen von Drittanbietern geladen (z. B. Fonts und CSS-Bibliotheken): dabei können technische Daten (z. B. IP-Adresse, User-Agent) an die jeweiligen Domains übertragen werden.",
+    "p3": "Die Seite enthält außerdem Links zu Drittseiten (Granarolo, Freepik, GitHub): beim Öffnen gelten die Hinweise der jeweiligen Anbieter.",
+    "updatedLabel": "Letzte Aktualisierung:"
+  },
+
+  "prefs": {
+    "title": "Einstellungen",
+    "p1": "Einstellungen werden <strong>nur</strong> auf ausdrücklichen Wunsch auf diesem Gerät (localStorage) gespeichert. Es werden keine Daten an Server gesendet.",
+    "themeLegend": "Theme",
+    "theme": {
+      "auto": "Automatisch (System)",
+      "light": "Hell",
+      "dark": "Dunkel"
+    },
+    "langLegend": "Sprache",
+    "lang": {
+      "it": "Italiano",
+      "en": "English",
+      "es": "Español",
+      "fr": "Français",
+      "de": "Deutsch"
+    },
+    "textLarge": "Größerer Text",
+    "highContrast": "Hoher Kontrast",
+    "reduceMotion": "Animationen reduzieren (zusätzlich zum System)",
+    "reset": "Zurücksetzen",
+    "save": "Speichern"
+  },
+
+  "common": {
+    "close": "Schließen"
+  }
+}

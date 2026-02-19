@@ -1,0 +1,264 @@
+{
+  "meta": {
+    "title": "Granarolo Sustainability 2024 - Summary",
+    "description": "Educational (unofficial) summary of the Granarolo 2024 Sustainability Report: supply chain, environment, animal welfare, people, community, innovation and waste reduction."
+  },
+  "skip": "Skip to content",
+  "brand": {
+    "sub": "Sustainability 2024"
+  },
+  "ui": {
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu"
+  },
+  "aria": {
+    "brandHome": "Reload the page and go back to the top",
+    "mainNav": "Main navigation",
+    "mobileNav": "Mobile menu",
+    "openPrefs": "Open preferences",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "langBlock": "Language",
+    "langSelect": "Select language",
+    "hero": "Introduction",
+    "heroHint": "Go to the About section",
+    "timeline": "Milk supply chain (timeline)",
+    "downloadSteps": "Main document contents",
+    "quickLinks": "Quick links",
+    "csrLink": "Open the CSR Report 2024 page",
+    "repoLink": "Open the project's GitHub repository",
+    "closeModal": "Close dialog",
+    "toTop": "Back to top"
+  },
+  "nav": {
+    "about": "About",
+    "supply": "Milk supply chain",
+    "pillars": "Pillars",
+    "areas": "Action areas",
+    "numbers": "Key numbers",
+    "downloadCta": "Download the report",
+    "prefs": "Preferences"
+  },
+  "lang": {
+    "label": "Language"
+  },
+  "hero": {
+    "pill": "Unofficial educational summary",
+    "title": "Sustainability Report<br><span>Granarolo 2024</span>",
+    "subtitle": "A guided overview of key topics: supply chain, environment, animal welfare, people and community, innovation and waste reduction.",
+    "btnDownload": "Download the 2024 Report (PDF)",
+    "btnDiscover": "Explore the summary"
+  },
+  "about": {
+    "title": "Who is Granarolo",
+    "p1": "Granarolo is one of Italy’s leading dairy groups, born from a farmers’ cooperative and developed as an integrated supply chain, from milk production on farms to processing plants and the distribution of finished products.",
+    "cards": {
+      "env": {
+        "title": "Environmental impact",
+        "p": "Monitoring of emissions, energy and water use, with efficiency actions and lower-impact solutions."
+      },
+      "people": {
+        "title": "People and work",
+        "p": "Safety, continuous training and welfare initiatives: the value of work is built through clear rules and care."
+      },
+      "community": {
+        "title": "Territory and community",
+        "p": "Local partnerships, responsible supply chain and community projects: sustainability is also social and economic."
+      }
+    }
+  },
+  "supply": {
+    "title": "Our milk supply chain",
+    "p1": "A concise overview of the integrated chain: farming, collection, processing and distribution, with controls and traceability across the main steps.",
+    "steps": {
+      "farmers": {
+        "title": "Farmers",
+        "p": "Granlatte cooperative supply chain (475 farmers), with shared standards and improvement programs."
+      },
+      "collect": {
+        "title": "Collection",
+        "p": "Collection and refrigerated transport, with compliance checks and incoming controls."
+      },
+      "plants": {
+        "title": "Plants",
+        "p": "Processing and quality controls throughout production, with procedures and monitoring."
+      },
+      "distribution": {
+        "title": "Distribution",
+        "p": "Logistics management and distribution to sales channels, with flow traceability."
+      },
+      "consumer": {
+        "title": "Consumer",
+        "p": "Label information and traceability to support more informed choices."
+      }
+    },
+    "note": "Reference: Sustainability Report 2024 — supply chain description and the Granlatte–Granarolo cooperative model."
+  },
+  "pillars": {
+    "title": "Sustainability pillars",
+    "p1": "Four areas summarizing the main initiatives: environment, animal welfare, people and packaging.",
+    "env": {
+      "title": "Environment and energy",
+      "p": "Lower emissions, more efficient plants and greater use of renewable sources.",
+      "chip1": "-34,000 t CO₂ (2023–2027)",
+      "chip2": "10% renewables (2023–2027)"
+    },
+    "animal": {
+      "title": "Animal welfare",
+      "p": "Shared protocols, veterinary checks and training: prevention and quality on the farm.",
+      "chip1": "100% certified farms",
+      "chip2": "Classyfarm + Bonlatte"
+    },
+    "people": {
+      "title": "People and work",
+      "p": "Safety, training, equal opportunities and welfare initiatives supporting employees.",
+      "chip1": "2,532 employees (2024)",
+      "chip2": "Cert. UNI/PdR 125:2022 (2024)"
+    },
+    "pack": {
+      "title": "Packaging and waste",
+      "p": "More recyclable packaging, less virgin plastic and initiatives to reduce food waste.",
+      "chip1": "-7,870 kg materials (2024)",
+      "chip2": "R-PET 25–50% on bottles"
+    },
+    "note": "Figures and targets summarized from the Group’s 2024 Sustainability Report."
+  },
+  "areas": {
+    "title": "Action areas",
+    "p1": "Key goals and progress status, derived from the 2024 Sustainability Report.",
+    "table": {
+      "title": "Strategic goals 2024",
+      "r1": {
+        "title": "Supply-chain biomethane",
+        "p": "Project to valorize livestock manure and reduce emissions along the supply chain.",
+        "badge": "In progress"
+      },
+      "r2": {
+        "title": "Supply-chain data platform (xFarm)",
+        "p": "Collection and monitoring of environmental and farm management data to improve traceability and performance.",
+        "badge": "Advanced"
+      },
+      "r3": {
+        "title": "Animal welfare and certifications",
+        "p": "Shared standards and audits (Classyfarm/Bonlatte) to assess and improve farming conditions.",
+        "badge": "Achieved"
+      },
+      "r4": {
+        "title": "Packaging: material reduction",
+        "p": "Actions on weight and packaging materials to reduce plastic and cardboard in 2024.",
+        "badge": "Achieved"
+      }
+    }
+  },
+  "sdg": {
+    "title": "Sustainable Development Goals",
+    "s3": {
+      "title": "Good health and well-being",
+      "p": "Food quality and safety, balanced and accessible nutrition."
+    },
+    "s12": {
+      "title": "Responsible consumption",
+      "p": "Circular economy, less waste and more sustainable packaging."
+    },
+    "s13": {
+      "title": "Climate action",
+      "p": "Emission reductions and adaptation measures across the supply chain."
+    }
+  },
+  "numbers": {
+    "title": "Key numbers 2024",
+    "p1": "These figures summarize selected indicators from the Group’s 2024 Sustainability Report.",
+    "cards": {
+      "c1": {
+        "sr": "Granlatte member farmers",
+        "p": "Member farmers<br>Granlatte"
+      },
+      "c2": {
+        "sr": "Plants in Italy",
+        "p": "Plants<br>in Italy"
+      },
+      "c3": {
+        "sr": "Milk purchased from Granlatte members",
+        "p": "Milk purchased<br>from Granlatte members"
+      },
+      "c4": {
+        "sr": "Baby bottles collected and recycled",
+        "p": "Baby bottles collected<br>and recycled"
+      }
+    },
+    "focus": {
+      "f1": {
+        "title": "Cooperative supply chain",
+        "p": "Share of milk purchased from Granlatte members out of the total sourced."
+      },
+      "f2": {
+        "title": "Material reduction",
+        "p": "Overall reduction of plastic and cardboard in packaging materials (2024)."
+      },
+      "f3": {
+        "title": "Avoided CO₂ (energy)",
+        "p": "Emissions avoided thanks to Guarantees of Origin for electricity (market-based)."
+      }
+    },
+    "note": "Source: 2024 Sustainability Report — Granarolo Group."
+  },
+  "download": {
+    "title": "Download documents",
+    "p1": "Links to the official CSR Report 2024 documents. The content of this page is an educational summary based on the sources listed, selected to highlight key indicators and projects.",
+    "btnFull": "Full report (PDF)",
+    "btnShort": "Summary (PDF)",
+    "steps": {
+      "s1": "Environment & energy",
+      "s2": "Animal welfare",
+      "s3": "People & community"
+    },
+    "foot": "Documents open on the official Granarolo website."
+  },
+  "footer": {
+    "brand": "Granarolo <span>Sustainability</span>",
+    "p1": "Unofficial summary page created for a university project work, based on the CSR Report 2024 and the Sustainability Report.",
+    "linksTitle": "Useful links",
+    "areasShort": "Areas",
+    "numbersShort": "Numbers",
+    "sourcesTitle": "Sources and credits",
+    "sourcesHtml": "<strong>Sources:</strong><br><a class=\"footer__link\" href=\"https://www.gruppogranarolo.it/chi-siamo/csr-report-2024\" target=\"_blank\" rel=\"noopener noreferrer\">CSR Report 2024 page</a><br><a class=\"footer__link\" href=\"https://www.gruppogranarolo.it/system/granarolo_corporate/attachments/data/000/006/091/original/IT-Granarolo-BS2024-21-10-25-singole-web.pdf?1761033984\" target=\"_blank\" rel=\"noopener noreferrer\">Sustainability Report 2024 (PDF)</a><br><a class=\"footer__link\" href=\"https://www.gruppogranarolo.it/system/granarolo_corporate/attachments/data/000/004/040/original/IT-sintesi-BS-2024-v4-0-singole.pdf?1753696091\" target=\"_blank\" rel=\"noopener noreferrer\">Sustainability Report summary 2024 (PDF)</a>",
+    "heroCreditHtml": "<strong>Hero image credit:</strong> <a class=\"footer__link\" href=\"https://it.freepik.com/foto-gratuito/vista-laterale-donna-sorridente-che-accarezza-la-mucca_29301267.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Freepik</a>.",
+    "repoHtml": "<strong>Repository:</strong> <a class=\"footer__link\" href=\"https://github.com/G-Penna/pw17-granarolo-sostenibilita-2024\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub (source code)</a>",
+    "bottom": "© 2026 · Unofficial educational summary.<span aria-hidden=\"true\"> · </span><a class=\"footer__link\" href=\"#privacy\" id=\"openPrivacy\" data-modal-open=\"privacy\">Privacy & cookies</a><span aria-hidden=\"true\"> · </span><a class=\"footer__link\" href=\"#preferenze\" id=\"openPrefs\" data-modal-open=\"prefs\">Preferences</a>",
+    "privacy": "Privacy & cookies",
+    "prefs": "Preferences"
+  },
+  "privacy": {
+    "title": "Privacy & cookies",
+    "p1": "This page does not use profiling cookies and does not carry out advertising tracking. Technical cookies may be generated by the browser to ensure proper navigation.",
+    "p2": "External resources are loaded from third-party providers (e.g., fonts and CSS libraries): these requests may transmit technical data (e.g., IP address, user agent) to the respective domains.",
+    "p3": "The page also contains links to third-party sites (Granarolo, Freepik, GitHub): when opening these links, the privacy notices of those sites apply.",
+    "updatedLabel": "Last updated:"
+  },
+  "prefs": {
+    "title": "Preferences",
+    "p1": "Preferences are saved <strong>only</strong> if explicitly requested, on this device (localStorage). They are not sent to any server.",
+    "themeLegend": "Theme",
+    "theme": {
+      "auto": "Automatic (follows system)",
+      "light": "Light",
+      "dark": "Dark"
+    },
+    "langLegend": "Language",
+    "lang": {
+      "it": "Italiano",
+      "en": "English",
+      "es": "Español",
+      "fr": "Français",
+      "de": "Deutsch"
+    },
+    "textLarge": "Larger text",
+    "highContrast": "High contrast",
+    "reduceMotion": "Reduce animations (in addition to system settings)",
+    "reset": "Reset",
+    "save": "Save"
+  },
+  "common": {
+    "close": "Close"
+  }
+}
