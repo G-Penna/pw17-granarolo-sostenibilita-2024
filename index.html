@@ -19,16 +19,13 @@
   <meta name="description" content="Sintesi didattica (non ufficiale) del Bilancio di Sostenibilità Granarolo 2024: filiera, ambiente, benessere animale, persone, comunità, innovazione e riduzione degli sprechi.">
   <meta name="theme-color" content="#2D5D4B">
 
-  <!-- Meta extra: autore + crawler -->
   <meta name="author" content="Giuseppe Penna">
   <meta name="robots" content="index,follow">
   <meta name="color-scheme" content="light dark">
   <meta name="format-detection" content="telephone=no">
 
-  <!-- Canonical (quando pubblichi, sostituisci ./ con l’URL finale della pagina) -->
   <link rel="canonical" href="./">
 
-  <!-- Open Graph -->
   <meta property="og:locale" content="it_IT">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Granarolo Sostenibilità 2024 - Sintesi">
@@ -38,66 +35,66 @@
   <meta property="og:image" content="img/hero.webp">
   <meta property="og:image:alt" content="Immagine di copertina: donna che accarezza una mucca">
 
-  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="icons/logo.svg">
 
-  <!-- Preload hero (LCP) -->
   <link rel="preload" as="image" href="img/hero.webp">
 
-  <!-- Performance: preconnect fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Fonts -->
   <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Material+Symbols+Outlined:wght@300;400;600&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,0,0&display=block">
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Material+Symbols+Outlined:wght@300;400;600&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,0,0&display=block">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- Font Awesome (defer non-blocking) -->
-  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
 </head>
-<body>
-  <a class="skip-link" href="#chi-siamo">Salta al contenuto</a>
 
-  <!-- Sentinel per gestire "navbar trasparente a scroll 0" -->
+<body>
+  <a class="skip-link" href="#chi-siamo" data-i18n="skip">Salta al contenuto</a>
+
   <div id="top-sentinel" aria-hidden="true"></div>
 
-  <!-- Header fisso -->
   <header class="header is-top" id="top">
     <div class="container header__inner">
-      <a class="brand" href="index.html" aria-label="Ricarica la pagina e torna all'inizio">
+      <a class="brand" href="index.html"
+         aria-label="Ricarica la pagina e torna all'inizio"
+         data-i18n-aria-label="aria.brandHome">
         <span class="brand__mark" aria-hidden="true">
           <img src="icons/logo.svg" alt="" width="34" height="34" loading="eager" decoding="async">
         </span>
         <span class="brand__text">
           <strong>Granarolo</strong>
-          <span class="brand__sub">Sostenibilità 2024</span>
+          <span class="brand__sub" data-i18n="brand.sub">Sostenibilità 2024</span>
         </span>
       </a>
 
-      <!-- Menu desktop -->
-      <nav class="nav" aria-label="Navigazione principale">
+      <nav class="nav" aria-label="Navigazione principale" data-i18n-aria-label="aria.mainNav">
         <ul class="nav__links" id="navLinks">
-          <li><a href="#chi-siamo">Chi siamo</a></li>
-          <li><a href="#filiera">Filiera del latte</a></li>
-          <li><a href="#pilastri">Pilastri</a></li>
-          <li><a href="#aree">Aree di intervento</a></li>
-          <li><a href="#numeri">Numeri chiave</a></li>
-          <li><a class="nav__cta" href="#download">Scarica il report</a></li>
+          <li><a href="#chi-siamo" data-i18n="nav.about">Chi siamo</a></li>
+          <li><a href="#filiera" data-i18n="nav.supply">Filiera del latte</a></li>
+          <li><a href="#pilastri" data-i18n="nav.pillars">Pilastri</a></li>
+          <li><a href="#aree" data-i18n="nav.areas">Aree di intervento</a></li>
+          <li><a href="#numeri" data-i18n="nav.numbers">Numeri chiave</a></li>
+          <li><a class="nav__cta" href="#download" data-i18n="nav.downloadCta">Scarica il report</a></li>
         </ul>
-        <button class="icon-btn" id="openPrefsTop" type="button" aria-label="Apri preferenze">
+
+        <!-- Preferenze (ingranaggio) -->
+        <button class="icon-btn" id="openPrefsTop" type="button"
+                aria-label="Apri preferenze"
+                data-i18n-aria-label="aria.openPrefs">
           <i class="fa-solid fa-gear" aria-hidden="true"></i>
         </button>
 
-        <!-- Burger -->
         <button
           class="burger"
           id="burger"
           type="button"
           aria-label="Apri il menu"
+          data-i18n-aria-label="aria.menuOpen"
           aria-expanded="false"
           aria-controls="mobileMenu"
         >
@@ -106,35 +103,39 @@
       </nav>
     </div>
 
-    <!-- Menu mobile -->
-    <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Menu mobile" aria-hidden="true">
+    <div class="mobile-menu" id="mobileMenu" role="navigation"
+         aria-label="Menu mobile" data-i18n-aria-label="aria.mobileNav"
+         aria-hidden="true">
       <div class="container mobile-menu__inner">
-        <a href="#chi-siamo">Chi siamo</a>
-        <a href="#filiera">Filiera del latte</a>
-        <a href="#pilastri">Pilastri</a>
-        <a href="#aree">Aree di intervento</a>
-        <a href="#numeri">Numeri chiave</a>
-        <a class="mobile-menu__cta" href="#download">Scarica il report</a>
-        <a href="#preferenze" id="openPrefsMobile">Preferenze</a>
+        <a href="#chi-siamo" data-i18n="nav.about">Chi siamo</a>
+        <a href="#filiera" data-i18n="nav.supply">Filiera del latte</a>
+        <a href="#pilastri" data-i18n="nav.pillars">Pilastri</a>
+        <a href="#aree" data-i18n="nav.areas">Aree di intervento</a>
+        <a href="#numeri" data-i18n="nav.numbers">Numeri chiave</a>
+        <a class="mobile-menu__cta" href="#download" data-i18n="nav.downloadCta">Scarica il report</a>
+
+        <!-- Preferenze dentro al burger (no scroll anchor) -->
+        <a href="#preferenze" id="openPrefsMobile" data-modal-open="prefs" data-i18n="nav.prefs">Preferenze</a>
+        
+        </div>
       </div>
     </div>
   </header>
 
   <main id="contenuto">
-    <!-- Hero -->
-    <section class="hero" aria-label="Introduzione">
+    <section class="hero" aria-label="Introduzione" data-i18n-aria-label="aria.hero">
       <div class="container hero__inner">
         <div class="pill">
           <span class="pill__dot" aria-hidden="true"></span>
-          <span>Sintesi non ufficiale a scopo didattico</span>
+          <span data-i18n="hero.pill">Sintesi non ufficiale a scopo didattico</span>
         </div>
 
-        <h1 class="hero__title">
+        <h1 class="hero__title" data-i18n-html="hero.title">
           Bilancio di Sostenibilità<br>
           <span>Granarolo 2024</span>
         </h1>
 
-        <p class="hero__subtitle">
+        <p class="hero__subtitle" data-i18n="hero.subtitle">
           Una lettura guidata dei temi principali: filiera, ambiente, benessere animale, persone e comunità,
           innovazione e riduzione degli sprechi.
         </p>
@@ -142,27 +143,27 @@
         <div class="hero__actions">
           <a class="btn btn--accent" href="#download">
             <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
-            Scarica il Bilancio 2024 (PDF)
+            <span data-i18n="hero.btnDownload">Scarica il Bilancio 2024 (PDF)</span>
           </a>
           <a class="btn btn--ghost" href="#chi-siamo">
-            Scopri la sintesi
+            <span data-i18n="hero.btnDiscover">Scopri la sintesi</span>
             <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
           </a>
         </div>
 
-        <a class="hero__hint" href="#chi-siamo" aria-label="Vai alla sezione Chi siamo">
+        <a class="hero__hint" href="#chi-siamo"
+           aria-label="Vai alla sezione Chi siamo"
+           data-i18n-aria-label="aria.heroHint">
           <i class="fa-solid fa-angles-down" aria-hidden="true"></i>
         </a>
-
       </div>
     </section>
-    
-    <!-- Chi siamo -->
+
     <section id="chi-siamo" class="section" tabindex="-1">
       <div class="container">
         <header class="section-head">
-          <h2>Chi è Granarolo</h2>
-          <p>
+          <h2 data-i18n="about.title">Chi è Granarolo</h2>
+          <p data-i18n="about.p1">
             Granarolo è uno dei principali gruppi lattiero-caseari italiani, nato da una cooperativa di allevatori e sviluppato come filiera integrata, dalla produzione di latte nelle stalle alla trasformazione negli stabilimenti e alla distribuzione dei prodotti finiti.
           </p>
         </header>
@@ -172,8 +173,8 @@
             <div class="card__icon card__icon--green">
               <i class="fa-solid fa-leaf" aria-hidden="true"></i>
             </div>
-            <h3>Impatto ambientale</h3>
-            <p>
+            <h3 data-i18n="about.cards.env.title">Impatto ambientale</h3>
+            <p data-i18n="about.cards.env.p">
               Monitoraggio di emissioni, consumi energetici e idrici, con interventi di efficienza e soluzioni a minore impatto.
             </p>
           </article>
@@ -182,8 +183,8 @@
             <div class="card__icon card__icon--amber">
               <i class="fa-solid fa-people-group" aria-hidden="true"></i>
             </div>
-            <h3>Persone e lavoro</h3>
-            <p>
+            <h3 data-i18n="about.cards.people.title">Persone e lavoro</h3>
+            <p data-i18n="about.cards.people.p">
               Sicurezza, formazione continua e iniziative di welfare, il valore del lavoro si costruisce con regole chiare e attenzione.
             </p>
           </article>
@@ -192,8 +193,8 @@
             <div class="card__icon card__icon--blue">
               <i class="fa-solid fa-building-circle-arrow-right" aria-hidden="true"></i>
             </div>
-            <h3>Territorio e comunità</h3>
-            <p>
+            <h3 data-i18n="about.cards.community.title">Territorio e comunità</h3>
+            <p data-i18n="about.cards.community.p">
               Collaborazioni locali, filiera responsabile e progetti sul territorio, la sostenibilità è anche sociale ed economica.
             </p>
           </article>
@@ -201,15 +202,16 @@
       </div>
     </section>
 
-    <!-- Filiera -->
     <section id="filiera" class="section section--white section--divider section--note-bottom" tabindex="-1">
       <div class="container">
         <header class="section-head">
-          <h2>La nostra filiera del latte</h2>
-<p>Schema sintetico della filiera integrata: allevamento, raccolta, trasformazione e distribuzione, con controlli e tracciabilità lungo i passaggi principali.</p>
+          <h2 data-i18n="supply.title">La nostra filiera del latte</h2>
+          <p data-i18n="supply.p1">
+            Schema sintetico della filiera integrata: allevamento, raccolta, trasformazione e distribuzione, con controlli e tracciabilità lungo i passaggi principali.
+          </p>
         </header>
 
-        <div class="timeline" role="region" aria-label="Filiera del latte (timeline)">
+        <div class="timeline" role="region" aria-label="Filiera del latte (timeline)" data-i18n-aria-label="aria.timeline">
           <div class="timeline__line" aria-hidden="true"></div>
 
           <div class="timeline__grid">
@@ -218,8 +220,8 @@
                 <span class="material-symbols-outlined" aria-hidden="true">agriculture</span>
               </div>
               <span class="step__dot" aria-hidden="true"></span>
-              <h3>Allevatori</h3>
-<p>Filiera cooperativa Granlatte (475 allevatori), con standard condivisi e programmi di miglioramento.</p>
+              <h3 data-i18n="supply.steps.farmers.title">Allevatori</h3>
+              <p data-i18n="supply.steps.farmers.p">Filiera cooperativa Granlatte (475 allevatori), con standard condivisi e programmi di miglioramento.</p>
             </div>
 
             <div class="step">
@@ -227,8 +229,8 @@
                 <span class="material-symbols-outlined" aria-hidden="true">local_shipping</span>
               </div>
               <span class="step__dot" aria-hidden="true"></span>
-              <h3>Raccolta</h3>
-<p>Raccolta e trasporto refrigerato, con verifiche di conformità e controlli in ingresso.</p>
+              <h3 data-i18n="supply.steps.collect.title">Raccolta</h3>
+              <p data-i18n="supply.steps.collect.p">Raccolta e trasporto refrigerato, con verifiche di conformità e controlli in ingresso.</p>
             </div>
 
             <div class="step">
@@ -236,8 +238,8 @@
                 <span class="material-symbols-outlined" aria-hidden="true">factory</span>
               </div>
               <span class="step__dot" aria-hidden="true"></span>
-              <h3>Stabilimenti</h3>
-<p>Trasformazione e controlli qualità lungo il processo produttivo, con procedure e monitoraggi.</p>
+              <h3 data-i18n="supply.steps.plants.title">Stabilimenti</h3>
+              <p data-i18n="supply.steps.plants.p">Trasformazione e controlli qualità lungo il processo produttivo, con procedure e monitoraggi.</p>
             </div>
 
             <div class="step">
@@ -245,8 +247,8 @@
                 <span class="material-symbols-outlined" aria-hidden="true">sync_alt</span>
               </div>
               <span class="step__dot" aria-hidden="true"></span>
-              <h3>Distribuzione</h3>
-<p>Gestione logistica e distribuzione verso i canali commerciali, con tracciabilità dei flussi.</p>
+              <h3 data-i18n="supply.steps.distribution.title">Distribuzione</h3>
+              <p data-i18n="supply.steps.distribution.p">Gestione logistica e distribuzione verso i canali commerciali, con tracciabilità dei flussi.</p>
             </div>
 
             <div class="step">
@@ -254,21 +256,21 @@
                 <span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span>
               </div>
               <span class="step__dot" aria-hidden="true"></span>
-              <h3>Consumatore</h3>
-<p>Informazioni in etichetta e tracciabilità, a supporto di una scelta più consapevole.</p>
+              <h3 data-i18n="supply.steps.consumer.title">Consumatore</h3>
+              <p data-i18n="supply.steps.consumer.p">Informazioni in etichetta e tracciabilità, a supporto di una scelta più consapevole.</p>
             </div>
           </div>
         </div>
-        <p class="note">Riferimento: Bilancio di Sostenibilità 2024 - descrizione della filiera e modello cooperativo Granlatte-Granarolo.</p>
+
+        <p class="note" data-i18n="supply.note">Riferimento: Bilancio di Sostenibilità 2024 - descrizione della filiera e modello cooperativo Granlatte-Granarolo.</p>
       </div>
     </section>
 
-    <!-- Pilastri -->
     <section id="pilastri" class="section section--divider section--note-bottom" tabindex="-1">
       <div class="container">
         <header class="section-head">
-          <h2>I pilastri della sostenibilità</h2>
-          <p>Quattro aree che sintetizzano le iniziative principali: ambiente, benessere animale, persone e packaging.</p>
+          <h2 data-i18n="pillars.title">I pilastri della sostenibilità</h2>
+          <p data-i18n="pillars.p1">Quattro aree che sintetizzano le iniziative principali: ambiente, benessere animale, persone e packaging.</p>
         </header>
 
         <div class="cards-2">
@@ -277,12 +279,11 @@
               <i class="fa-solid fa-bolt" aria-hidden="true"></i>
             </div>
             <div class="pillar__body">
-              <h3>Ambiente ed energia</h3>
-              <p>Riduzione emissioni, efficienza degli impianti e aumento delle fonti rinnovabili.</p>
+              <h3 data-i18n="pillars.env.title">Ambiente ed energia</h3>
+              <p data-i18n="pillars.env.p">Riduzione emissioni, efficienza degli impianti e aumento delle fonti rinnovabili.</p>
               <div class="chips">
-                <span class="chip" data-tone="green">-34.000 t CO₂ (2023-2027)</span>
-                <span class="chip" data-tone="blue">10% rinnovabili (2023-2027)</span>
-
+                <span class="chip" data-tone="green" data-i18n="pillars.env.chip1">-34.000 t CO₂ (2023-2027)</span>
+                <span class="chip" data-tone="blue" data-i18n="pillars.env.chip2">10% rinnovabili (2023-2027)</span>
               </div>
             </div>
           </article>
@@ -292,12 +293,11 @@
               <i class="fa-solid fa-heart" aria-hidden="true"></i>
             </div>
             <div class="pillar__body">
-              <h3>Benessere animale</h3>
-              <p>Protocolli condivisi, controlli veterinari e formazione: prevenzione e qualità in stalla.</p>
+              <h3 data-i18n="pillars.animal.title">Benessere animale</h3>
+              <p data-i18n="pillars.animal.p">Protocolli condivisi, controlli veterinari e formazione: prevenzione e qualità in stalla.</p>
               <div class="chips">
-                <span class="chip" data-tone="cream">100% stalle certificate</span>
-                <span class="chip" data-tone="green">Classyfarm + Bonlatte</span>
-
+                <span class="chip" data-tone="cream" data-i18n="pillars.animal.chip1">100% stalle certificate</span>
+                <span class="chip" data-tone="green" data-i18n="pillars.animal.chip2">Classyfarm + Bonlatte</span>
               </div>
             </div>
           </article>
@@ -307,12 +307,11 @@
               <i class="fa-solid fa-user-group" aria-hidden="true"></i>
             </div>
             <div class="pillar__body">
-              <h3>Persone e lavoro</h3>
-              <p>Sicurezza, formazione, pari opportunità e iniziative di welfare a supporto dei dipendenti.</p>
+              <h3 data-i18n="pillars.people.title">Persone e lavoro</h3>
+              <p data-i18n="pillars.people.p">Sicurezza, formazione, pari opportunità e iniziative di welfare a supporto dei dipendenti.</p>
               <div class="chips">
-                <span class="chip" data-tone="blue">2.532 dipendenti (2024)</span>
-                <span class="chip" data-tone="green">Cert. UNI/PdR 125:2022 (2024)</span>
-
+                <span class="chip" data-tone="blue" data-i18n="pillars.people.chip1">2.532 dipendenti (2024)</span>
+                <span class="chip" data-tone="green" data-i18n="pillars.people.chip2">Cert. UNI/PdR 125:2022 (2024)</span>
               </div>
             </div>
           </article>
@@ -322,240 +321,216 @@
               <i class="fa-solid fa-recycle" aria-hidden="true"></i>
             </div>
             <div class="pillar__body">
-              <h3>Packaging e spreco</h3>
-              <p>Imballaggi più riciclabili, meno plastica vergine e iniziative contro lo spreco alimentare.</p>
+              <h3 data-i18n="pillars.pack.title">Packaging e spreco</h3>
+              <p data-i18n="pillars.pack.p">Imballaggi più riciclabili, meno plastica vergine e iniziative contro lo spreco alimentare.</p>
               <div class="chips">
-                <span class="chip" data-tone="green">-7.870 kg materiali (2024)</span>
-                <span class="chip" data-tone="cream">R-PET 25-50% su bottiglie</span>
-
+                <span class="chip" data-tone="green" data-i18n="pillars.pack.chip1">-7.870 kg materiali (2024)</span>
+                <span class="chip" data-tone="cream" data-i18n="pillars.pack.chip2">R-PET 25-50% su bottiglie</span>
               </div>
             </div>
           </article>
         </div>
 
-        <p class="note">Dati e target sintetizzati dal Bilancio di Sostenibilità 2024 del Gruppo Granarolo.</p>
-
+        <p class="note" data-i18n="pillars.note">Dati e target sintetizzati dal Bilancio di Sostenibilità 2024 del Gruppo Granarolo.</p>
       </div>
     </section>
 
-    <!-- Aree di intervento -->
-<section
-  id="aree"
-  class="section section--secondary section--divider section--note-bottom"
-  tabindex="-1"
->
-  <div class="container">
-    <header class="section-head">
-      <h2>Aree di intervento</h2>
-      <p>Obiettivi sintetici e stato di avanzamento, ricavati dal Bilancio di Sostenibilità 2024.</p>
-    </header>
+    <section id="aree" class="section section--secondary section--divider section--note-bottom" tabindex="-1">
+      <div class="container">
+        <header class="section-head">
+          <h2 data-i18n="areas.title">Aree di intervento</h2>
+          <p data-i18n="areas.p1">Obiettivi sintetici e stato di avanzamento, ricavati dal Bilancio di Sostenibilità 2024.</p>
+        </header>
 
-    <div class="grid-2">
-      <div class="table-card">
-        <div class="table-card__head">
-          <h3>Obiettivi strategici 2024</h3>
-        </div>
-
-        <div class="table">
-          <div class="row">
-            <div class="row__left">
-              <h4>Biometano di filiera</h4>
-              <p>Progetto per valorizzare i reflui zootecnici e ridurre le emissioni lungo la filiera.</p>
+        <div class="grid-2">
+          <div class="table-card">
+            <div class="table-card__head">
+              <h3 data-i18n="areas.table.title">Obiettivi strategici 2024</h3>
             </div>
-            <span class="badge badge--green">In corso</span>
-          </div>
 
-          <div class="row">
-            <div class="row__left">
-              <h4>Piattaforma dati di filiera (xFarm)</h4>
-              <p>
-                Raccolta e monitoraggio dei dati ambientali e gestionali in allevamento per migliorare tracciabilità e
-                performance.
-              </p>
+            <div class="table">
+              <div class="row">
+                <div class="row__left">
+                  <h4 data-i18n="areas.table.r1.title">Biometano di filiera</h4>
+                  <p data-i18n="areas.table.r1.p">Progetto per valorizzare i reflui zootecnici e ridurre le emissioni lungo la filiera.</p>
+                </div>
+                <span class="badge badge--green" data-i18n="areas.table.r1.badge">In corso</span>
+              </div>
+
+              <div class="row">
+                <div class="row__left">
+                  <h4 data-i18n="areas.table.r2.title">Piattaforma dati di filiera (xFarm)</h4>
+                  <p data-i18n="areas.table.r2.p">Raccolta e monitoraggio dei dati ambientali e gestionali in allevamento per migliorare tracciabilità e performance.</p>
+                </div>
+                <span class="badge badge--blue" data-i18n="areas.table.r2.badge">Avanzato</span>
+              </div>
+
+              <div class="row">
+                <div class="row__left">
+                  <h4 data-i18n="areas.table.r3.title">Benessere animale e certificazioni</h4>
+                  <p data-i18n="areas.table.r3.p">Standard condivisi e audit (Classyfarm/Bonlatte) per valutare e migliorare le condizioni di allevamento.</p>
+                </div>
+                <span class="badge badge--green" data-i18n="areas.table.r3.badge">Raggiunto</span>
+              </div>
+
+              <div class="row">
+                <div class="row__left">
+                  <h4 data-i18n="areas.table.r4.title">Packaging: riduzione materiali</h4>
+                  <p data-i18n="areas.table.r4.p">Interventi su peso e materiali degli imballaggi per ridurre plastica e cartone nel 2024.</p>
+                </div>
+                <span class="badge badge--green" data-i18n="areas.table.r4.badge">Raggiunto</span>
+              </div>
             </div>
-            <span class="badge badge--blue">Avanzato</span>
           </div>
 
-          <div class="row">
-            <div class="row__left">
-              <h4>Benessere animale e certificazioni</h4>
-              <p>
-                Standard condivisi e audit (Classyfarm/Bonlatte) per valutare e migliorare le condizioni di
-                allevamento.
-              </p>
+          <div class="sdg">
+            <h3 class="sdg__title" data-i18n="sdg.title">Sustainable Development Goals</h3>
+
+            <article class="sdg-card">
+              <div class="sdg-card__num" style="background:#4C9F38;">3</div>
+              <div class="sdg-card__text">
+                <h4 data-i18n="sdg.s3.title">Salute e benessere</h4>
+                <p data-i18n="sdg.s3.p">Qualità e sicurezza alimentare, nutrizione equilibrata e accessibile.</p>
+              </div>
+            </article>
+
+            <article class="sdg-card">
+              <div class="sdg-card__num" style="background:#DDA63A;">12</div>
+              <div class="sdg-card__text">
+                <h4 data-i18n="sdg.s12.title">Consumo responsabile</h4>
+                <p data-i18n="sdg.s12.p">Economia circolare, meno sprechi e packaging più sostenibile.</p>
+              </div>
+            </article>
+
+            <article class="sdg-card">
+              <div class="sdg-card__num" style="background:#3F7E44;">13</div>
+              <div class="sdg-card__text">
+                <h4 data-i18n="sdg.s13.title">Azione per il clima</h4>
+                <p data-i18n="sdg.s13.p">Riduzione emissioni e misure di adattamento lungo la filiera.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="numeri" class="section section--dark section--divider section--note-bottom" tabindex="-1">
+      <div class="container">
+        <header class="section-head section-head--dark">
+          <h2 data-i18n="numbers.title">Numeri chiave 2024</h2>
+          <p data-i18n="numbers.p1">I dati sintetizzano alcuni indicatori del Bilancio di Sostenibilità 2024 del Gruppo Granarolo.</p>
+        </header>
+
+        <div class="numbers">
+          <article class="num-card">
+            <h3 class="sr-only" data-i18n="numbers.cards.c1.sr">Allevatori soci Granlatte</h3>
+            <div class="num-card__value">475</div>
+            <p data-i18n-html="numbers.cards.c1.p">Allevatori soci<br>Granlatte</p>
+          </article>
+
+          <article class="num-card">
+            <h3 class="sr-only" data-i18n="numbers.cards.c2.sr">Stabilimenti in Italia</h3>
+            <div class="num-card__value">15</div>
+            <p data-i18n-html="numbers.cards.c2.p">Stabilimenti<br>in Italia</p>
+          </article>
+
+          <article class="num-card">
+            <h3 class="sr-only" data-i18n="numbers.cards.c3.sr">Latte acquistato da soci Granlatte</h3>
+            <div class="num-card__value">97%</div>
+            <p data-i18n-html="numbers.cards.c3.p">Latte acquistato<br>da soci Granlatte</p>
+          </article>
+
+          <article class="num-card">
+            <h3 class="sr-only" data-i18n="numbers.cards.c4.sr">Biberon raccolti e riciclati</h3>
+            <div class="num-card__value">42.143</div>
+            <p data-i18n-html="numbers.cards.c4.p">Biberon raccolti<br>e riciclati</p>
+          </article>
+        </div>
+
+        <div class="focus">
+          <article class="focus-card">
+            <div class="focus-card__top">
+              <span class="material-symbols-rounded">handshake</span>
+              <span class="focus-card__data">97%</span>
             </div>
-            <span class="badge badge--green">Raggiunto</span>
-          </div>
+            <h4 data-i18n="numbers.focus.f1.title">Filiera cooperativa</h4>
+            <p data-i18n="numbers.focus.f1.p">Quota di latte acquistato da soci Granlatte sul totale approvvigionato.</p>
+          </article>
 
-          <div class="row">
-            <div class="row__left">
-              <h4>Packaging: riduzione materiali</h4>
-              <p>Interventi su peso e materiali degli imballaggi per ridurre plastica e cartone nel 2024.</p>
+          <article class="focus-card">
+            <div class="focus-card__top">
+              <span class="material-symbols-rounded">inventory_2</span>
+              <span class="focus-card__data focus-card__data--brown">-7.870 kg</span>
             </div>
-            <span class="badge badge--green">Raggiunto</span>
+            <h4 data-i18n="numbers.focus.f2.title">Riduzione materiali</h4>
+            <p data-i18n="numbers.focus.f2.p">Riduzione complessiva di plastica e cartone su imballaggi e packaging (2024).</p>
+          </article>
+
+          <article class="focus-card">
+            <div class="focus-card__top">
+              <span class="material-symbols-rounded">bolt</span>
+              <span class="focus-card__data focus-card__data--green">29.693 t</span>
+            </div>
+            <h4 data-i18n="numbers.focus.f3.title">CO₂ evitata (energia)</h4>
+            <p data-i18n="numbers.focus.f3.p">Emissioni evitate grazie a Garanzie d’Origine per energia elettrica (market-based).</p>
+          </article>
+        </div>
+
+        <p class="note note--dark" data-i18n="numbers.note">Fonte: Bilancio di Sostenibilità 2024 - Gruppo Granarolo.</p>
+      </div>
+    </section>
+
+    <section id="download" class="section section--white section--divider section--note-bottom" tabindex="-1">
+      <div class="container">
+        <div class="download">
+          <div class="download__icon" aria-hidden="true">
+            <i class="fa-regular fa-file-lines"></i>
+          </div>
+
+          <h2 data-i18n="download.title">Scarica i documenti</h2>
+
+          <p class="fineprint" data-i18n="download.p1">
+            Link ai documenti ufficiali del CSR Report 2024. I contenuti di questa pagina sono una sintesi didattica
+            basata sulle fonti indicate e selezionata per evidenziare alcuni indicatori e progetti chiave.
+          </p>
+
+          <div class="download__actions">
+            <a class="btn btn--primary" target="_blank" rel="noopener noreferrer"
+               href="https://www.gruppogranarolo.it/system/granarolo_corporate/attachments/data/000/006/091/original/IT-Granarolo-BS2024-21-10-25-singole-web.pdf?1761033984=">
+              <span data-i18n="download.btnFull">Bilancio completo (PDF)</span>
+            </a>
+
+            <a class="btn btn--outline" target="_blank" rel="noopener noreferrer"
+               href="https://www.gruppogranarolo.it/system/granarolo_corporate/attachments/data/000/004/040/original/IT-sintesi-BS-2024-v4-0-singole.pdf?1753696091=">
+              <span data-i18n="download.btnShort">Sintesi (PDF)</span>
+            </a>
+          </div>
+
+          <div class="download__steps" aria-label="Contenuti principali dei documenti" data-i18n-aria-label="aria.downloadSteps">
+            <div class="dstep">
+              <i class="fa-solid fa-leaf" aria-hidden="true"></i>
+              <span data-i18n="download.steps.s1">Ambiente & energia</span>
+            </div>
+
+            <div class="dstep">
+              <i class="fa-solid fa-heart" aria-hidden="true"></i>
+              <span data-i18n="download.steps.s2">Benessere animale</span>
+            </div>
+
+            <div class="dstep">
+              <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+              <span data-i18n="download.steps.s3">Persone & comunità</span>
+            </div>
+          </div>
+
+          <div class="download__foot">
+            <p class="fineprint" data-i18n="download.foot">I documenti si aprono su sito ufficiale Granarolo.</p>
           </div>
         </div>
       </div>
+    </section>
+  </main>
 
-      <div class="sdg">
-        <h3 class="sdg__title">Sustainable Development Goals</h3>
-
-        <article class="sdg-card">
-          <div class="sdg-card__num" style="background:#4C9F38;">3</div>
-          <div class="sdg-card__text">
-            <h4>Salute e benessere</h4>
-            <p>Qualità e sicurezza alimentare, nutrizione equilibrata e accessibile.</p>
-          </div>
-        </article>
-
-        <article class="sdg-card">
-          <div class="sdg-card__num" style="background:#DDA63A;">12</div>
-          <div class="sdg-card__text">
-            <h4>Consumo responsabile</h4>
-            <p>Economia circolare, meno sprechi e packaging più sostenibile.</p>
-          </div>
-        </article>
-
-        <article class="sdg-card">
-          <div class="sdg-card__num" style="background:#3F7E44;">13</div>
-          <div class="sdg-card__text">
-            <h4>Azione per il clima</h4>
-            <p>Riduzione emissioni e misure di adattamento lungo la filiera.</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Numeri chiave -->
-<section id="numeri" class="section section--dark section--divider section--note-bottom" tabindex="-1">
-  <div class="container">
-    <header class="section-head section-head--dark">
-      <h2>Numeri chiave 2024</h2>
-      <p>I dati sintetizzano alcuni indicatori del Bilancio di Sostenibilità 2024 del Gruppo Granarolo.</p>
-    </header>
-
-    <div class="numbers">
-      <article class="num-card">
-        <h3 class="sr-only">Allevatori soci Granlatte</h3>
-        <div class="num-card__value">475</div>
-        <p>Allevatori soci<br>Granlatte</p>
-      </article>
-
-      <article class="num-card">
-        <h3 class="sr-only">Stabilimenti in Italia</h3>
-        <div class="num-card__value">15</div>
-        <p>Stabilimenti<br>in Italia</p>
-      </article>
-
-      <article class="num-card">
-        <h3 class="sr-only">Latte acquistato da soci Granlatte</h3>
-        <div class="num-card__value">97%</div>
-        <p>Latte acquistato<br>da soci Granlatte</p>
-      </article>
-
-      <article class="num-card">
-        <h3 class="sr-only">Biberon raccolti e riciclati</h3>
-        <div class="num-card__value">42.143</div>
-        <p>Biberon raccolti<br>e riciclati</p>
-      </article>
-    </div>
-
-    <div class="focus">
-      <article class="focus-card">
-        <div class="focus-card__top">
-          <span class="material-symbols-rounded">handshake</span>
-          <span class="focus-card__data">97%</span>
-        </div>
-        <h4>Filiera cooperativa</h4>
-        <p>Quota di latte acquistato da soci Granlatte sul totale approvvigionato.</p>
-      </article>
-
-      <article class="focus-card">
-        <div class="focus-card__top">
-          <span class="material-symbols-rounded">inventory_2</span>
-          <span class="focus-card__data focus-card__data--brown">-7.870 kg</span>
-        </div>
-        <h4>Riduzione materiali</h4>
-        <p>Riduzione complessiva di plastica e cartone su imballaggi e packaging (2024).</p>
-      </article>
-
-      <article class="focus-card">
-        <div class="focus-card__top">
-          <span class="material-symbols-rounded">bolt</span>
-          <span class="focus-card__data focus-card__data--green">29.693 t</span>
-        </div>
-        <h4>CO₂ evitata (energia)</h4>
-        <p>Emissioni evitate grazie a Garanzie d’Origine per energia elettrica (market-based).</p>
-      </article>
-    </div>
-
-    <p class="note note--dark">Fonte: Bilancio di Sostenibilità 2024 - Gruppo Granarolo.</p>
-  </div>
-</section>
-
-    <!-- Download -->
-<section id="download" class="section section--white section--divider section--note-bottom" tabindex="-1">
-  <div class="container">
-    <div class="download">
-      <div class="download__icon" aria-hidden="true">
-        <i class="fa-regular fa-file-lines"></i>
-      </div>
-
-      <h2>Scarica i documenti</h2>
-
-      <p class="fineprint">
-        Link ai documenti ufficiali del CSR Report 2024. I contenuti di questa pagina sono una sintesi didattica
-        basata sulle fonti indicate e selezionata per evidenziare alcuni indicatori e progetti chiave.
-      </p>
-
-      <div class="download__actions">
-        <a
-          class="btn btn--primary"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.gruppogranarolo.it/system/granarolo_corporate/attachments/data/000/006/091/original/IT-Granarolo-BS2024-21-10-25-singole-web.pdf?1761033984="
-        >
-          Bilancio completo (PDF)
-        </a>
-
-        <a
-          class="btn btn--outline"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.gruppogranarolo.it/system/granarolo_corporate/attachments/data/000/004/040/original/IT-sintesi-BS-2024-v4-0-singole.pdf?1753696091="
-        >
-          Sintesi (PDF)
-        </a>
-      </div>
-
-      <div class="download__steps" aria-label="Contenuti principali dei documenti">
-        <div class="dstep">
-          <i class="fa-solid fa-leaf" aria-hidden="true"></i>
-          <span>Ambiente & energia</span>
-        </div>
-
-        <div class="dstep">
-          <i class="fa-solid fa-heart" aria-hidden="true"></i>
-          <span>Benessere animale</span>
-        </div>
-
-        <div class="dstep">
-          <i class="fa-solid fa-people-group" aria-hidden="true"></i>
-          <span>Persone & comunità</span>
-        </div>
-      </div>
-
-      <div class="download__foot">
-        <p class="fineprint">I documenti si aprono su sito ufficiale Granarolo.</p>
-      </div>
-    </div>
-  </div>
-</section>
-</main>
-
-  <!-- Footer -->
   <footer class="footer section--divider">
     <div class="container footer__grid">
       <div class="footer__col footer__col--wide">
@@ -563,182 +538,209 @@
           <span class="brand__mark" aria-hidden="true">
             <img src="icons/logo.svg" alt="" width="34" height="34" loading="eager" decoding="async">
           </span>
-          <span class="footer__name">Granarolo <span>Sostenibilità</span></span>
+          <span class="footer__name" data-i18n-html="footer.brand">Granarolo <span>Sostenibilità</span></span>
         </div>
-        <p class="footer__text">
-            Pagina di sintesi non ufficiale realizzata per project work universitario, basata su CSR Report 2024 e Bilancio di Sostenibilità.
+        <p class="footer__text" data-i18n="footer.p1">
+          Pagina di sintesi non ufficiale realizzata per project work universitario, basata su CSR Report 2024 e Bilancio di Sostenibilità.
         </p>
-
       </div>
 
       <div class="footer__col">
-        <h3>Link utili</h3>
+        <h3 data-i18n="footer.linksTitle">Link utili</h3>
         <ul>
-          <li><a href="#chi-siamo">Chi siamo</a></li>
-          <li><a href="#filiera">Filiera del latte</a></li>
-          <li><a href="#pilastri">Pilastri</a></li>
-          <li><a href="#aree">Aree</a></li>
-          <li><a href="#numeri">Numeri</a></li>
+          <li><a href="#chi-siamo" data-i18n="nav.about">Chi siamo</a></li>
+          <li><a href="#filiera" data-i18n="nav.supply">Filiera del latte</a></li>
+          <li><a href="#pilastri" data-i18n="nav.pillars">Pilastri</a></li>
+          <li><a href="#aree" data-i18n="footer.areasShort">Aree</a></li>
+          <li><a href="#numeri" data-i18n="footer.numbersShort">Numeri</a></li>
         </ul>
       </div>
 
       <div class="footer__col">
-  <h3>Fonti e crediti</h3>
+        <h3 data-i18n="footer.sourcesTitle">Fonti e crediti</h3>
 
-  <p class="footer__text">
-    <strong>Fonti:</strong><br>
-    <a class="footer__link" href="https://www.gruppogranarolo.it/chi-siamo/csr-report-2024"
-       target="_blank" rel="noopener noreferrer">Pagina CSR Report 2024</a><br>
-    <a class="footer__link" href="https://www.gruppogranarolo.it/system/granarolo_corporate/attachments/data/000/006/091/original/IT-Granarolo-BS2024-21-10-25-singole-web.pdf?1761033984"
-       target="_blank" rel="noopener noreferrer">Bilancio di Sostenibilità 2024 (PDF)</a><br>
-    <a class="footer__link" href="https://www.gruppogranarolo.it/system/granarolo_corporate/attachments/data/000/004/040/original/IT-sintesi-BS-2024-v4-0-singole.pdf?1753696091"
-       target="_blank" rel="noopener noreferrer">Sintesi Bilancio di Sostenibilità 2024 (PDF)</a>
-  </p>
+        <p class="footer__text" data-i18n-html="footer.sourcesHtml">
+          <strong>Fonti:</strong><br>
+          <a class="footer__link" href="https://www.gruppogranarolo.it/chi-siamo/csr-report-2024" target="_blank" rel="noopener noreferrer">Pagina CSR Report 2024</a><br>
+          <a class="footer__link" href="https://www.gruppogranarolo.it/system/granarolo_corporate/attachments/data/000/006/091/original/IT-Granarolo-BS2024-21-10-25-singole-web.pdf?1761033984" target="_blank" rel="noopener noreferrer">Bilancio di Sostenibilità 2024 (PDF)</a><br>
+          <a class="footer__link" href="https://www.gruppogranarolo.it/system/granarolo_corporate/attachments/data/000/004/040/original/IT-sintesi-BS-2024-v4-0-singole.pdf?1753696091" target="_blank" rel="noopener noreferrer">Sintesi Bilancio di Sostenibilità 2024 (PDF)</a>
+        </p>
 
-  <p class="footer__text">
-    <strong>Crediti immagine hero:</strong>
-    <a class="footer__link" href="https://it.freepik.com/foto-gratuito/vista-laterale-donna-sorridente-che-accarezza-la-mucca_29301267.htm"
-       target="_blank" rel="noopener noreferrer">Freepik</a>.
-  </p>
+        <p class="footer__text" data-i18n-html="footer.heroCreditHtml">
+          <strong>Crediti immagine hero:</strong>
+          <a class="footer__link" href="https://it.freepik.com/foto-gratuito/vista-laterale-donna-sorridente-che-accarezza-la-mucca_29301267.htm" target="_blank" rel="noopener noreferrer">Freepik</a>.
+        </p>
 
-  <p class="footer__text">
-    <strong>Repository:</strong>
-    <a class="footer__link" href="https://github.com/G-Penna/pw17-granarolo-sostenibilita-2024"
-       target="_blank" rel="noopener noreferrer">GitHub (codice sorgente)</a>
-  </p>
+        <p class="footer__text" data-i18n-html="footer.repoHtml">
+          <strong>Repository:</strong>
+          <a class="footer__link" href="https://github.com/G-Penna/pw17-granarolo-sostenibilita-2024" target="_blank" rel="noopener noreferrer">GitHub (codice sorgente)</a>
+        </p>
 
-  <div class="footer__social" role="navigation" aria-label="Collegamenti rapidi">
-    <a href="https://www.gruppogranarolo.it/chi-siamo/csr-report-2024"
-       target="_blank" rel="noopener noreferrer" aria-label="Apri la pagina CSR Report 2024">
-      <i class="fa-regular fa-file-lines" aria-hidden="true"></i>
-    </a>
+        <div class="footer__social" role="navigation" aria-label="Collegamenti rapidi" data-i18n-aria-label="aria.quickLinks">
+          <a href="https://www.gruppogranarolo.it/chi-siamo/csr-report-2024"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Apri la pagina CSR Report 2024"
+             data-i18n-aria-label="aria.csrLink">
+            <i class="fa-regular fa-file-lines" aria-hidden="true"></i>
+          </a>
 
-    <a href="https://github.com/G-Penna/pw17-granarolo-sostenibilita-2024"
-       target="_blank" rel="noopener noreferrer" aria-label="Apri il repository GitHub del progetto">
-      <i class="fa-brands fa-github" aria-hidden="true"></i>
-    </a>
-  </div>
-</div>
-
+          <a href="https://github.com/G-Penna/pw17-granarolo-sostenibilita-2024"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Apri il repository GitHub del progetto"
+             data-i18n-aria-label="aria.repoLink">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
     </div>
 
     <div class="container footer__bottom">
-      <p>© 2026 · Sintesi non ufficiale a scopo didattico.
+      <p data-i18n-html="footer.bottom">
+        © 2026 · Sintesi non ufficiale a scopo didattico.
         <span aria-hidden="true"> · </span>
-        <a class="footer__link" href="#privacy" id="openPrivacy">Privacy & cookie</a>
+        <a class="footer__link" href="#privacy" id="openPrivacy" data-modal-open="privacy" data-i18n="footer.privacy">Privacy & cookie</a>
         <span aria-hidden="true"> · </span>
-        <a class="footer__link" href="#preferenze" id="openPrefs">Preferenze</a>
+        <a class="footer__link" href="#preferenze" id="openPrefs" data-modal-open="prefs" data-i18n="footer.prefs">Preferenze</a>
       </p>
     </div>
   </footer>
 
   <!-- Modal: Privacy & Cookie -->
-<div class="modal" id="privacyModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="privacyTitle">
-  <div class="modal__backdrop" data-close></div>
-  <div class="modal__panel" role="document">
-    <div class="modal__head">
-      <h2 id="privacyTitle">Privacy & cookie</h2>
-      <button class="modal__close" type="button" data-close aria-label="Chiudi finestra">
-        <span aria-hidden="true">×</span>
-      </button>
-    </div>
+  <div class="modal" id="privacyModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="privacyTitle">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel" role="document">
+      <div class="modal__head">
+        <h2 id="privacyTitle" data-i18n="privacy.title">Privacy & cookie</h2>
+        <button class="modal__close" type="button" data-close aria-label="Chiudi finestra" data-i18n-aria-label="aria.closeModal">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
 
-    <div class="modal__body">
-      <p>
-        Questa pagina non utilizza cookie di profilazione e non svolge attività di tracciamento pubblicitario.
-        Eventuali cookie tecnici possono essere generati dal browser per il corretto funzionamento della navigazione.
-      </p>
+      <div class="modal__body">
+        <p data-i18n="privacy.p1">
+          Questa pagina non utilizza cookie di profilazione e non svolge attività di tracciamento pubblicitario.
+          Eventuali cookie tecnici possono essere generati dal browser per il corretto funzionamento della navigazione.
+        </p>
 
-      <p>
-        Sono presenti risorse caricate da fornitori esterni (ad esempio font e librerie CSS): tali richieste possono
-        comportare la trasmissione di dati tecnici (es. indirizzo IP, user agent) ai rispettivi domini.
-      </p>
+        <p data-i18n="privacy.p2">
+          Sono presenti risorse caricate da fornitori esterni (ad esempio font e librerie CSS): tali richieste possono
+          comportare la trasmissione di dati tecnici (es. indirizzo IP, user agent) ai rispettivi domini.
+        </p>
 
-      <p>
-        La pagina contiene inoltre collegamenti a siti terzi (Granarolo, Freepik, GitHub): aprendo tali link si applicano
-        le informative dei rispettivi siti.
-      </p>
+        <p data-i18n="privacy.p3">
+          La pagina contiene inoltre collegamenti a siti terzi (Granarolo, Freepik, GitHub): aprendo tali link si applicano
+          le informative dei rispettivi siti.
+        </p>
 
-      <p class="note">
-        Ultimo aggiornamento: <time datetime="2026-02-13">13/02/2026</time>.
-      </p>
-    </div>
+        <p class="note">
+          <span data-i18n="privacy.updatedLabel">Ultimo aggiornamento:</span>
+          <time datetime="2026-02-13">13/02/2026</time>.
+        </p>
+      </div>
 
-    <div class="modal__foot">
-      <button class="btn btn--primary" type="button" data-close>Chiudi</button>
-    </div>
-  </div>
-</div>
-
-<!-- Modal: Preferenze -->
-<div class="modal" id="prefsModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="prefsTitle">
-  <div class="modal__backdrop" data-close></div>
-  <div class="modal__panel" role="document">
-    <div class="modal__head">
-      <h2 id="prefsTitle">Preferenze</h2>
-      <button class="modal__close" type="button" data-close aria-label="Chiudi finestra">
-        <span aria-hidden="true">×</span>
-      </button>
-    </div>
-
-    <div class="modal__body">
-  <p>
-    Le preferenze vengono salvate <strong>solo</strong> se richiesto esplicitamente, sul dispositivo (localStorage).
-    Non vengono inviate a server.
-  </p>
-
-  <fieldset class="prefs" aria-labelledby="prefsThemeLabel">
-    <legend id="prefsThemeLabel">Tema</legend>
-
-    <label class="radio">
-      <input type="radio" name="prefTheme" value="auto" checked>
-      <span>Automatico (segue il sistema)</span>
-    </label>
-
-    <label class="radio">
-      <input type="radio" name="prefTheme" value="light">
-      <span>Chiaro</span>
-    </label>
-
-    <label class="radio">
-      <input type="radio" name="prefTheme" value="dark">
-      <span>Scuro</span>
-    </label>
-  </fieldset>
-
-  <label class="toggle">
-    <input type="checkbox" id="prefTextLarge">
-    <span class="toggle__ui" aria-hidden="true"></span>
-    <span class="toggle__text">Testo più grande</span>
-  </label>
-
-  <label class="toggle">
-    <input type="checkbox" id="prefHighContrast">
-    <span class="toggle__ui" aria-hidden="true"></span>
-    <span class="toggle__text">Contrasto alto</span>
-  </label>
-
-  <label class="toggle">
-    <input type="checkbox" id="prefReduceMotion">
-    <span class="toggle__ui" aria-hidden="true"></span>
-    <span class="toggle__text">Riduci animazioni (oltre alle impostazioni di sistema)</span>
-  </label>
-</div>
-
-
-    <div class="modal__foot">
-      <button class="btn btn--outline" type="button" id="prefsReset">Ripristina</button>
-      <button class="btn btn--primary" type="button" id="prefsSave">Salva</button>
+      <div class="modal__foot">
+        <button class="btn btn--primary" type="button" data-close data-i18n="common.close">Chiudi</button>
+      </div>
     </div>
   </div>
-</div>
 
-  <!-- Torna su -->
-  <a class="to-top" id="toTop" href="#top" aria-label="Torna su">
+  <!-- Modal: Preferenze -->
+  <div class="modal" id="prefsModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="prefsTitle">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel" role="document">
+      <div class="modal__head">
+        <h2 id="prefsTitle" data-i18n="prefs.title">Preferenze</h2>
+        <button class="modal__close" type="button" data-close aria-label="Chiudi finestra" data-i18n-aria-label="aria.closeModal">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+
+      <div class="modal__body">
+        <p data-i18n-html="prefs.p1">
+          Le preferenze vengono salvate <strong>solo</strong> se richiesto esplicitamente, sul dispositivo (localStorage).
+          Non vengono inviate a server.
+        </p>
+
+        <fieldset class="prefs" aria-labelledby="prefsThemeLabel">
+          <legend id="prefsThemeLabel" data-i18n="prefs.themeLegend">Tema</legend>
+
+          <label class="radio">
+            <input type="radio" name="prefTheme" value="auto" checked>
+            <span data-i18n="prefs.theme.auto">Automatico (segue il sistema)</span>
+          </label>
+
+          <label class="radio">
+            <input type="radio" name="prefTheme" value="light">
+            <span data-i18n="prefs.theme.light">Chiaro</span>
+          </label>
+
+          <label class="radio">
+            <input type="radio" name="prefTheme" value="dark">
+            <span data-i18n="prefs.theme.dark">Scuro</span>
+          </label>
+        </fieldset>
+
+        <!-- Lingua (Preferenze) -->
+        <fieldset class="prefs" aria-labelledby="prefsLangLabel">
+          <legend id="prefsLangLabel" data-i18n="prefs.langLegend">Lingua</legend>
+
+          <label class="radio">
+            <input type="radio" name="prefLang" value="it" checked>
+            <span data-i18n="prefs.lang.it">Italiano</span>
+          </label>
+
+          <label class="radio">
+            <input type="radio" name="prefLang" value="en">
+            <span data-i18n="prefs.lang.en">English</span>
+          </label>
+
+          <label class="radio">
+            <input type="radio" name="prefLang" value="es">
+            <span data-i18n="prefs.lang.es">Español</span>
+          </label>
+
+          <label class="radio">
+            <input type="radio" name="prefLang" value="fr">
+            <span data-i18n="prefs.lang.fr">Français</span>
+          </label>
+
+          <label class="radio">
+            <input type="radio" name="prefLang" value="de">
+            <span data-i18n="prefs.lang.de">Deutsch</span>
+          </label>
+        </fieldset>
+
+        <label class="toggle">
+          <input type="checkbox" id="prefTextLarge">
+          <span class="toggle__ui" aria-hidden="true"></span>
+          <span class="toggle__text" data-i18n="prefs.textLarge">Testo più grande</span>
+        </label>
+
+        <label class="toggle">
+          <input type="checkbox" id="prefHighContrast">
+          <span class="toggle__ui" aria-hidden="true"></span>
+          <span class="toggle__text" data-i18n="prefs.highContrast">Contrasto alto</span>
+        </label>
+
+        <label class="toggle">
+          <input type="checkbox" id="prefReduceMotion">
+          <span class="toggle__ui" aria-hidden="true"></span>
+          <span class="toggle__text" data-i18n="prefs.reduceMotion">Riduci animazioni (oltre alle impostazioni di sistema)</span>
+        </label>
+      </div>
+
+      <div class="modal__foot">
+        <button class="btn btn--outline" type="button" id="prefsReset" data-i18n="prefs.reset">Ripristina</button>
+        <button class="btn btn--primary" type="button" id="prefsSave" data-i18n="prefs.save">Salva</button>
+      </div>
+    </div>
+  </div>
+
+  <a class="to-top" id="toTop" href="#top" aria-label="Torna su" data-i18n-aria-label="aria.toTop">
     <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
   </a>
 
-  <script>
+ <script>
 (function () {
   const header = document.querySelector('.header');
   if (!header) return;
@@ -754,19 +756,13 @@
     window.matchMedia('(min-width: 1025px)').matches;
 
   // Evita che il browser ripristini lo scroll dopo refresh/back-forward
-  if ('scrollRestoration' in history) {
-    history.scrollRestoration = 'manual';
-  }
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 
   const forceTopIfNoHash = () => {
     const h = window.location.hash;
-    if (!h || h === '#top') {
-      window.scrollTo(0, 0);
-    }
+    if (!h || h === '#top') window.scrollTo(0, 0);
   };
-
   window.addEventListener('pageshow', forceTopIfNoHash);
-
 
   // -----------------------
   // Header + ToTop
@@ -796,7 +792,7 @@
       burger.classList.toggle('is-open', open);
 
       burger.setAttribute('aria-expanded', open ? 'true' : 'false');
-      burger.setAttribute('aria-label', open ? 'Chiudi il menu' : 'Apri il menu');
+      // aria-label burger verrà aggiornato anche da i18n (vedi setBurgerLabels)
       mobileMenu.setAttribute('aria-hidden', open ? 'false' : 'true');
 
       document.documentElement.classList.toggle('no-scroll', open);
@@ -831,41 +827,37 @@
     if (isDesktop() && header.classList.contains('nav-open')) setMenu(false);
   });
 
-  /* To top
-  if (toTop) {
-    toTop.addEventListener('click', (e) => {
-      e.preventDefault();
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: reduceMotion() ? 'auto' : 'smooth'
-      });
-    });
-  }*/
-
   // Burger toggle
   if (burger && mobileMenu) {
     burger.addEventListener('click', () => {
       setMenu(!header.classList.contains('nav-open'));
+      setBurgerLabels(header.classList.contains('nav-open'));
     });
 
-    // Chiudi menu al click su un link del menu
+    // Chiudi menu al click su un link del menu (ma NON bloccare i modali)
     mobileMenu.addEventListener('click', (e) => {
       const link = e.target.closest('a');
       if (!link) return;
       setMenu(false);
+      setBurgerLabels(false);
     });
 
     // ESC chiude
     window.addEventListener('keydown', (e) => {
       if (e.key !== 'Escape') return;
-      if (header.classList.contains('nav-open')) setMenu(false);
+      if (header.classList.contains('nav-open')) {
+        setMenu(false);
+        setBurgerLabels(false);
+      }
     });
 
     // Click fuori chiude
     document.addEventListener('click', (e) => {
       if (!header.classList.contains('nav-open')) return;
-      if (!header.contains(e.target)) setMenu(false);
+      if (!header.contains(e.target)) {
+        setMenu(false);
+        setBurgerLabels(false);
+      }
     });
   }
 
@@ -876,10 +868,12 @@
     const a = e.target.closest('a[href^="#"]');
     if (!a) return;
 
+    // NON intercettare i link che aprono modali
+    if (a.hasAttribute('data-modal-open')) return;
+
     const href = a.getAttribute('href');
     if (!href || href === '#' || href.length < 2) return;
 
-    // Caso speciale: #top punta a un elemento fixed -> scrolla la pagina
     if (href === '#top') {
       e.preventDefault();
       window.scrollTo({
@@ -903,18 +897,23 @@
     target.focus({ preventScroll: true });
   });
 
-    // -----------------------
-  // Privacy / Preferenze (modali) + localStorage solo su richiesta esplicita
+  // -----------------------
+  // Privacy / Preferenze (modali)
   // -----------------------
   const privacyModal = document.getElementById('privacyModal');
   const prefsModal = document.getElementById('prefsModal');
+
   const openPrivacy = document.getElementById('openPrivacy');
   const openPrefs = document.getElementById('openPrefs');
+
+  const openPrefsTop = document.getElementById('openPrefsTop');
+  const openPrefsMobile = document.getElementById('openPrefsMobile');
 
   const prefReduceMotion = document.getElementById('prefReduceMotion');
   const prefTextLarge = document.getElementById('prefTextLarge');
   const prefHighContrast = document.getElementById('prefHighContrast');
   const prefThemeRadios = document.querySelectorAll('input[name="prefTheme"]');
+  const prefLangRadios = document.querySelectorAll('input[name="prefLang"]');
 
   const prefsSave = document.getElementById('prefsSave');
   const prefsReset = document.getElementById('prefsReset');
@@ -936,7 +935,6 @@
       prefsModal.classList.remove('is-open');
       prefsModal.setAttribute('aria-hidden', 'true');
     }
-    // non togliere no-scroll se il menu è aperto
     document.documentElement.classList.toggle('no-scroll', header.classList.contains('nav-open'));
     if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
   };
@@ -964,7 +962,6 @@
 
   const wireModal = (modal) => {
     if (!modal) return;
-
     modal.addEventListener('click', (e) => {
       if (e.target && e.target.hasAttribute('data-close')) setModal(modal, false);
       const closeBtn = e.target && e.target.closest ? e.target.closest('[data-close]') : null;
@@ -975,7 +972,6 @@
   wireModal(privacyModal);
   wireModal(prefsModal);
 
-  // ESC: se un modal è aperto, chiude quello (prima del menu)
   window.addEventListener('keydown', (e) => {
     if (e.key !== 'Escape') return;
     if (anyModalOpen()) closeAllModals();
@@ -997,7 +993,70 @@
     } catch (err) {}
   };
 
-    const schemeMql = window.matchMedia('(prefers-color-scheme: dark)');
+  // i18n
+  const I18N_DIR = 'i18n';
+  let i18nDict = {};
+
+  const getByPath = (obj, path) => {
+    if (!obj || !path) return null;
+    return path.split('.').reduce((acc, k) => (acc && acc[k] != null ? acc[k] : null), obj);
+  };
+
+  const loadLang = async (lang) => {
+    try {
+      const res = await fetch(`${I18N_DIR}/${lang}.json`, { cache: 'no-cache' });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      i18nDict = await res.json();
+      return true;
+    } catch (err) {
+      i18nDict = {};
+      return false;
+    }
+  };
+
+  const applyI18n = () => {
+    document.querySelectorAll('[data-i18n]').forEach((el) => {
+      const key = el.getAttribute('data-i18n');
+      const val = getByPath(i18nDict, key);
+      if (typeof val === 'string') el.textContent = val;
+    });
+
+    document.querySelectorAll('[data-i18n-html]').forEach((el) => {
+      const key = el.getAttribute('data-i18n-html');
+      const val = getByPath(i18nDict, key);
+      if (typeof val === 'string') el.innerHTML = val;
+    });
+
+    document.querySelectorAll('[data-i18n-aria-label]').forEach((el) => {
+      const key = el.getAttribute('data-i18n-aria-label');
+      const val = getByPath(i18nDict, key);
+      if (typeof val === 'string') el.setAttribute('aria-label', val);
+    });
+
+    document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => {
+      const key = el.getAttribute('data-i18n-placeholder');
+      const val = getByPath(i18nDict, key);
+      if (typeof val === 'string') el.setAttribute('placeholder', val);
+    });
+  };
+
+  const setBurgerLabels = (isOpen) => {
+    if (!burger) return;
+    const openLabel = getByPath(i18nDict, 'ui.menuOpen') || 'Apri il menu';
+    const closeLabel = getByPath(i18nDict, 'ui.menuClose') || 'Chiudi il menu';
+    burger.setAttribute('aria-label', isOpen ? closeLabel : openLabel);
+  };
+
+  const setLanguage = async (lang) => {
+    const ok = await loadLang(lang);
+    document.documentElement.lang = lang;
+    applyI18n();
+    setBurgerLabels(header.classList.contains('nav-open'));
+    return ok;
+  };
+
+  // Tema auto: segue sistema
+  const schemeMql = window.matchMedia('(prefers-color-scheme: dark)');
 
   const applyPrefs = () => {
     const prefs = readPrefs();
@@ -1013,7 +1072,6 @@
     document.documentElement.classList.toggle('user-reduce-motion', prefs.reduceMotion === true);
   };
 
-  // Se il tema è "auto", segue eventuali cambi di tema del sistema
   const onSchemeChange = () => {
     const prefs = readPrefs();
     const theme = prefs.theme || 'auto';
@@ -1026,69 +1084,70 @@
     schemeMql.addListener(onSchemeChange);
   }
 
-
   const syncUIFromPrefs = () => {
     const prefs = readPrefs();
 
     const theme = prefs.theme || 'auto';
     prefThemeRadios.forEach(r => { r.checked = (r.value === theme); });
 
+    const lang = prefs.lang || 'it';
+    prefLangRadios.forEach(r => { r.checked = (r.value === lang); });
+
     if (prefTextLarge) prefTextLarge.checked = (prefs.textLarge === true);
     if (prefHighContrast) prefHighContrast.checked = (prefs.highContrast === true);
     if (prefReduceMotion) prefReduceMotion.checked = (prefs.reduceMotion === true);
   };
 
-  // Applica preferenze eventualmente già salvate (senza banner)
+  // Applica prefs + lingua salvata
   applyPrefs();
+  (async () => {
+    const prefs = readPrefs();
+    const lang = prefs.lang || 'it';
+    await setLanguage(lang);
+  })();
 
-  if (openPrivacy) {
-    openPrivacy.addEventListener('click', (e) => {
+  // -----------------------
+  // FIX: APRI modali (mancava)
+  // -----------------------
+  const openModalFromEl = (el, modal) => {
+    if (!el || !modal) return;
+    el.addEventListener('click', (e) => {
       e.preventDefault();
-      if (header.classList.contains('nav-open')) setMenu(false);
-      setModal(privacyModal, true);
+      if (modal === prefsModal) syncUIFromPrefs();
+      setModal(modal, true);
     });
-  }
+  };
 
-  if (openPrefs) {
-    openPrefs.addEventListener('click', (e) => {
-      e.preventDefault();
-      if (header.classList.contains('nav-open')) setMenu(false);
+  openModalFromEl(openPrivacy, privacyModal);
+  openModalFromEl(openPrefs, prefsModal);
+  openModalFromEl(openPrefsTop, prefsModal);
+  openModalFromEl(openPrefsMobile, prefsModal);
 
-      syncUIFromPrefs();
-      setModal(prefsModal, true);
-    });
-  }
+  // Delegazione generica: data-modal-open="privacy|prefs"
+  document.addEventListener('click', (e) => {
+    const opener = e.target.closest('[data-modal-open]');
+    if (!opener) return;
 
+    const which = opener.getAttribute('data-modal-open');
+    if (which !== 'privacy' && which !== 'prefs') return;
 
-const openPrefsTop = document.getElementById('openPrefsTop');
-const openPrefsMobile = document.getElementById('openPrefsMobile');
-
-if (openPrefsTop) {
-  openPrefsTop.addEventListener('click', (e) => {
     e.preventDefault();
-    if (header.classList.contains('nav-open')) setMenu(false);
-    syncUIFromPrefs();
-    setModal(prefsModal, true);
+    if (which === 'prefs') syncUIFromPrefs();
+    setModal(which === 'privacy' ? privacyModal : prefsModal, true);
   });
-}
 
-if (openPrefsMobile) {
-  openPrefsMobile.addEventListener('click', (e) => {
-    e.preventDefault();
-    syncUIFromPrefs();
-    setModal(prefsModal, true);
-    setMenu(false);
-  });
-}
-
-
+  // Salva preferenze
   if (prefsSave) {
-    prefsSave.addEventListener('click', () => {
+    prefsSave.addEventListener('click', async () => {
       const prefs = readPrefs();
 
       let theme = 'auto';
       prefThemeRadios.forEach(r => { if (r.checked) theme = r.value; });
       prefs.theme = theme;
+
+      let lang = 'it';
+      prefLangRadios.forEach(r => { if (r.checked) lang = r.value; });
+      prefs.lang = lang;
 
       prefs.textLarge = !!(prefTextLarge && prefTextLarge.checked);
       prefs.highContrast = !!(prefHighContrast && prefHighContrast.checked);
@@ -1096,22 +1155,33 @@ if (openPrefsMobile) {
 
       writePrefs(prefs);
       applyPrefs();
-      setModal(prefsModal, false);
+
+      try {
+        await setLanguage(lang);
+      } finally {
+        setModal(prefsModal, false);
+      }
     });
   }
 
+  // Ripristina
   if (prefsReset) {
-    prefsReset.addEventListener('click', () => {
+    prefsReset.addEventListener('click', async () => {
       try { localStorage.removeItem(PREF_KEY); } catch (err) {}
-      syncUIFromPrefs();
+
       applyPrefs();
-      setModal(prefsModal, false);
+
+      try {
+        await setLanguage('it');
+      } finally {
+        syncUIFromPrefs();
+        setModal(prefsModal, false);
+      }
     });
   }
+
 })();
 </script>
-
-
 
 </body>
 </html>
