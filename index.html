@@ -22,28 +22,22 @@
   <!-- Meta extra: autore + crawler -->
   <meta name="author" content="Giuseppe Penna">
   <meta name="robots" content="index,follow">
-  <meta name="color-scheme" content="light">
+  <meta name="color-scheme" content="light dark">
   <meta name="format-detection" content="telephone=no">
-  
-  <!-- Canonical -->
-  <link rel="canonical" href="https://g-penna.github.io/pw17-granarolo-sostenibilita-2024/">
+
+  <!-- Canonical (quando pubblichi, sostituisci ./ con l’URL finale della pagina) -->
+  <link rel="canonical" href="./">
 
   <!-- Open Graph -->
   <meta property="og:locale" content="it_IT">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Granarolo Sostenibilità 2024 - Sintesi">
   <meta property="og:description" content="Sintesi didattica (non ufficiale) del Bilancio di Sostenibilità Granarolo 2024.">
-  <meta property="og:url" content="https://g-penna.github.io/pw17-granarolo-sostenibilita-2024/">
+  <meta property="og:url" content="./">
   <meta property="og:site_name" content="PW17 - Granarolo Sostenibilità 2024">
-  <meta property="og:image" content="https://g-penna.github.io/pw17-granarolo-sostenibilita-2024/img/hero.webp">
+  <meta property="og:image" content="img/hero.webp">
   <meta property="og:image:alt" content="Immagine di copertina: donna che accarezza una mucca">
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Granarolo Sostenibilità 2024 - Sintesi">
-  <meta name="twitter:description" content="Sintesi didattica (non ufficiale) del Bilancio di Sostenibilità Granarolo 2024.">
-  <meta name="twitter:image" content="https://g-penna.github.io/pw17-granarolo-sostenibilita-2024/img/hero.webp">
-  
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="icons/logo.svg">
 
@@ -61,11 +55,10 @@
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- Font Awesome -->
+  <!-- Font Awesome (defer non-blocking) -->
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
 </head>
-
 <body>
   <a class="skip-link" href="#chi-siamo">Salta al contenuto</a>
 
@@ -95,6 +88,9 @@
           <li><a href="#numeri">Numeri chiave</a></li>
           <li><a class="nav__cta" href="#download">Scarica il report</a></li>
         </ul>
+        <button class="icon-btn" id="openPrefsTop" type="button" aria-label="Apri preferenze">
+          <i class="fa-solid fa-gear" aria-hidden="true"></i>
+        </button>
 
         <!-- Burger -->
         <button
@@ -119,6 +115,7 @@
         <a href="#aree">Aree di intervento</a>
         <a href="#numeri">Numeri chiave</a>
         <a class="mobile-menu__cta" href="#download">Scarica il report</a>
+        <a href="#preferenze" id="openPrefsMobile">Preferenze</a>
       </div>
     </div>
   </header>
@@ -626,14 +623,121 @@
     </div>
 
     <div class="container footer__bottom">
-      <p>© 2024 · Sintesi non ufficiale a scopo didattico.</p>
+      <p>© 2026 · Sintesi non ufficiale a scopo didattico.
+        <span aria-hidden="true"> · </span>
+        <a class="footer__link" href="#privacy" id="openPrivacy">Privacy & cookie</a>
+        <span aria-hidden="true"> · </span>
+        <a class="footer__link" href="#preferenze" id="openPrefs">Preferenze</a>
+      </p>
     </div>
   </footer>
+
+  <!-- Modal: Privacy & Cookie -->
+<div class="modal" id="privacyModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="privacyTitle">
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__panel" role="document">
+    <div class="modal__head">
+      <h2 id="privacyTitle">Privacy & cookie</h2>
+      <button class="modal__close" type="button" data-close aria-label="Chiudi finestra">
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
+
+    <div class="modal__body">
+      <p>
+        Questa pagina non utilizza cookie di profilazione e non svolge attività di tracciamento pubblicitario.
+        Eventuali cookie tecnici possono essere generati dal browser per il corretto funzionamento della navigazione.
+      </p>
+
+      <p>
+        Sono presenti risorse caricate da fornitori esterni (ad esempio font e librerie CSS): tali richieste possono
+        comportare la trasmissione di dati tecnici (es. indirizzo IP, user agent) ai rispettivi domini.
+      </p>
+
+      <p>
+        La pagina contiene inoltre collegamenti a siti terzi (Granarolo, Freepik, GitHub): aprendo tali link si applicano
+        le informative dei rispettivi siti.
+      </p>
+
+      <p class="note">
+        Ultimo aggiornamento: <time datetime="2026-02-13">13/02/2026</time>.
+      </p>
+    </div>
+
+    <div class="modal__foot">
+      <button class="btn btn--primary" type="button" data-close>Chiudi</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Preferenze -->
+<div class="modal" id="prefsModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="prefsTitle">
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__panel" role="document">
+    <div class="modal__head">
+      <h2 id="prefsTitle">Preferenze</h2>
+      <button class="modal__close" type="button" data-close aria-label="Chiudi finestra">
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
+
+    <div class="modal__body">
+  <p>
+    Le preferenze vengono salvate <strong>solo</strong> se richiesto esplicitamente, sul dispositivo (localStorage).
+    Non vengono inviate a server.
+  </p>
+
+  <fieldset class="prefs" aria-labelledby="prefsThemeLabel">
+    <legend id="prefsThemeLabel">Tema</legend>
+
+    <label class="radio">
+      <input type="radio" name="prefTheme" value="auto" checked>
+      <span>Automatico (segue il sistema)</span>
+    </label>
+
+    <label class="radio">
+      <input type="radio" name="prefTheme" value="light">
+      <span>Chiaro</span>
+    </label>
+
+    <label class="radio">
+      <input type="radio" name="prefTheme" value="dark">
+      <span>Scuro</span>
+    </label>
+  </fieldset>
+
+  <label class="toggle">
+    <input type="checkbox" id="prefTextLarge">
+    <span class="toggle__ui" aria-hidden="true"></span>
+    <span class="toggle__text">Testo più grande</span>
+  </label>
+
+  <label class="toggle">
+    <input type="checkbox" id="prefHighContrast">
+    <span class="toggle__ui" aria-hidden="true"></span>
+    <span class="toggle__text">Contrasto alto</span>
+  </label>
+
+  <label class="toggle">
+    <input type="checkbox" id="prefReduceMotion">
+    <span class="toggle__ui" aria-hidden="true"></span>
+    <span class="toggle__text">Riduci animazioni (oltre alle impostazioni di sistema)</span>
+  </label>
+</div>
+
+
+    <div class="modal__foot">
+      <button class="btn btn--outline" type="button" id="prefsReset">Ripristina</button>
+      <button class="btn btn--primary" type="button" id="prefsSave">Salva</button>
+    </div>
+  </div>
+</div>
 
   <!-- Torna su -->
   <a class="to-top" id="toTop" href="#top" aria-label="Torna su">
     <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
   </a>
+
   <script>
 (function () {
   const header = document.querySelector('.header');
@@ -649,17 +753,31 @@
   const isDesktop = () =>
     window.matchMedia('(min-width: 1025px)').matches;
 
+  // Evita che il browser ripristini lo scroll dopo refresh/back-forward
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+
+  const forceTopIfNoHash = () => {
+    const h = window.location.hash;
+    if (!h || h === '#top') {
+      window.scrollTo(0, 0);
+    }
+  };
+
+  window.addEventListener('pageshow', forceTopIfNoHash);
+
+
   // -----------------------
   // Header + ToTop
   // -----------------------
   let lastIsTop = null;
-const updateHeader = () => {
-  const isTopNow = window.scrollY <= 8; 
-  if (isTopNow === lastIsTop) return; 
-  lastIsTop = isTopNow;
-  header.classList.toggle('is-top', isTopNow);
-};
-
+  const updateHeader = () => {
+    const isTopNow = window.scrollY <= 8;
+    if (isTopNow === lastIsTop) return;
+    lastIsTop = isTopNow;
+    header.classList.toggle('is-top', isTopNow);
+  };
 
   const updateToTop = () => {
     if (!toTop) return;
@@ -715,15 +833,15 @@ const updateHeader = () => {
 
   /* To top
   if (toTop) {
-  toTop.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: reduceMotion() ? 'auto' : 'smooth'
+    toTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: reduceMotion() ? 'auto' : 'smooth'
+      });
     });
-  });
-}*/
+  }*/
 
   // Burger toggle
   if (burger && mobileMenu) {
@@ -762,35 +880,238 @@ const updateHeader = () => {
     if (!href || href === '#' || href.length < 2) return;
 
     // Caso speciale: #top punta a un elemento fixed -> scrolla la pagina
-if (href === '#top') {
-  e.preventDefault();
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: reduceMotion() ? 'auto' : 'smooth'
+    if (href === '#top') {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: reduceMotion() ? 'auto' : 'smooth'
+      });
+      return;
+    }
+
+    const target = document.querySelector(href);
+    if (!target) return;
+
+    e.preventDefault();
+
+    target.scrollIntoView({
+      behavior: reduceMotion() ? 'auto' : 'smooth',
+      block: 'start'
+    });
+
+    target.focus({ preventScroll: true });
   });
-  return;
+
+    // -----------------------
+  // Privacy / Preferenze (modali) + localStorage solo su richiesta esplicita
+  // -----------------------
+  const privacyModal = document.getElementById('privacyModal');
+  const prefsModal = document.getElementById('prefsModal');
+  const openPrivacy = document.getElementById('openPrivacy');
+  const openPrefs = document.getElementById('openPrefs');
+
+  const prefReduceMotion = document.getElementById('prefReduceMotion');
+  const prefTextLarge = document.getElementById('prefTextLarge');
+  const prefHighContrast = document.getElementById('prefHighContrast');
+  const prefThemeRadios = document.querySelectorAll('input[name="prefTheme"]');
+
+  const prefsSave = document.getElementById('prefsSave');
+  const prefsReset = document.getElementById('prefsReset');
+
+  const PREF_KEY = 'pw17_prefs';
+
+  let lastFocus = null;
+
+  const anyModalOpen = () =>
+    (privacyModal && privacyModal.classList.contains('is-open')) ||
+    (prefsModal && prefsModal.classList.contains('is-open'));
+
+  const closeAllModals = () => {
+    if (privacyModal) {
+      privacyModal.classList.remove('is-open');
+      privacyModal.setAttribute('aria-hidden', 'true');
+    }
+    if (prefsModal) {
+      prefsModal.classList.remove('is-open');
+      prefsModal.setAttribute('aria-hidden', 'true');
+    }
+    // non togliere no-scroll se il menu è aperto
+    document.documentElement.classList.toggle('no-scroll', header.classList.contains('nav-open'));
+    if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
+  };
+
+  const setModal = (modal, open) => {
+    if (!modal) return;
+
+    if (open) {
+      lastFocus = document.activeElement;
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.documentElement.classList.add('no-scroll');
+
+      const focusable = modal.querySelector(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      );
+      if (focusable) focusable.focus();
+    } else {
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.documentElement.classList.toggle('no-scroll', header.classList.contains('nav-open'));
+      if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
+    }
+  };
+
+  const wireModal = (modal) => {
+    if (!modal) return;
+
+    modal.addEventListener('click', (e) => {
+      if (e.target && e.target.hasAttribute('data-close')) setModal(modal, false);
+      const closeBtn = e.target && e.target.closest ? e.target.closest('[data-close]') : null;
+      if (closeBtn) setModal(modal, false);
+    });
+  };
+
+  wireModal(privacyModal);
+  wireModal(prefsModal);
+
+  // ESC: se un modal è aperto, chiude quello (prima del menu)
+  window.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    if (anyModalOpen()) closeAllModals();
+  });
+
+  // --- Prefs helpers ---
+  const readPrefs = () => {
+    try {
+      const raw = localStorage.getItem(PREF_KEY);
+      return raw ? JSON.parse(raw) : {};
+    } catch (err) {
+      return {};
+    }
+  };
+
+  const writePrefs = (prefs) => {
+    try {
+      localStorage.setItem(PREF_KEY, JSON.stringify(prefs));
+    } catch (err) {}
+  };
+
+    const schemeMql = window.matchMedia('(prefers-color-scheme: dark)');
+
+  const applyPrefs = () => {
+    const prefs = readPrefs();
+
+    const theme = prefs.theme || 'auto';
+    const isDark = (theme === 'dark') || (theme === 'auto' && schemeMql.matches);
+
+    document.documentElement.classList.toggle('theme-dark', isDark);
+    document.documentElement.classList.toggle('theme-light', theme === 'light');
+
+    document.documentElement.classList.toggle('high-contrast', prefs.highContrast === true);
+    document.documentElement.classList.toggle('text-large', prefs.textLarge === true);
+    document.documentElement.classList.toggle('user-reduce-motion', prefs.reduceMotion === true);
+  };
+
+  // Se il tema è "auto", segue eventuali cambi di tema del sistema
+  const onSchemeChange = () => {
+    const prefs = readPrefs();
+    const theme = prefs.theme || 'auto';
+    if (theme === 'auto') applyPrefs();
+  };
+
+  if (typeof schemeMql.addEventListener === 'function') {
+    schemeMql.addEventListener('change', onSchemeChange);
+  } else if (typeof schemeMql.addListener === 'function') {
+    schemeMql.addListener(onSchemeChange);
+  }
+
+
+  const syncUIFromPrefs = () => {
+    const prefs = readPrefs();
+
+    const theme = prefs.theme || 'auto';
+    prefThemeRadios.forEach(r => { r.checked = (r.value === theme); });
+
+    if (prefTextLarge) prefTextLarge.checked = (prefs.textLarge === true);
+    if (prefHighContrast) prefHighContrast.checked = (prefs.highContrast === true);
+    if (prefReduceMotion) prefReduceMotion.checked = (prefs.reduceMotion === true);
+  };
+
+  // Applica preferenze eventualmente già salvate (senza banner)
+  applyPrefs();
+
+  if (openPrivacy) {
+    openPrivacy.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (header.classList.contains('nav-open')) setMenu(false);
+      setModal(privacyModal, true);
+    });
+  }
+
+  if (openPrefs) {
+    openPrefs.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (header.classList.contains('nav-open')) setMenu(false);
+
+      syncUIFromPrefs();
+      setModal(prefsModal, true);
+    });
+  }
+
+
+const openPrefsTop = document.getElementById('openPrefsTop');
+const openPrefsMobile = document.getElementById('openPrefsMobile');
+
+if (openPrefsTop) {
+  openPrefsTop.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (header.classList.contains('nav-open')) setMenu(false);
+    syncUIFromPrefs();
+    setModal(prefsModal, true);
+  });
 }
 
-const target = document.querySelector(href);
-if (!target) return;
-
-e.preventDefault();
-
-target.scrollIntoView({
-  behavior: reduceMotion() ? 'auto' : 'smooth',
-  block: 'start'
-});
-
-target.focus({ preventScroll: true });
-
+if (openPrefsMobile) {
+  openPrefsMobile.addEventListener('click', (e) => {
+    e.preventDefault();
+    syncUIFromPrefs();
+    setModal(prefsModal, true);
+    setMenu(false);
   });
+}
+
+
+  if (prefsSave) {
+    prefsSave.addEventListener('click', () => {
+      const prefs = readPrefs();
+
+      let theme = 'auto';
+      prefThemeRadios.forEach(r => { if (r.checked) theme = r.value; });
+      prefs.theme = theme;
+
+      prefs.textLarge = !!(prefTextLarge && prefTextLarge.checked);
+      prefs.highContrast = !!(prefHighContrast && prefHighContrast.checked);
+      prefs.reduceMotion = !!(prefReduceMotion && prefReduceMotion.checked);
+
+      writePrefs(prefs);
+      applyPrefs();
+      setModal(prefsModal, false);
+    });
+  }
+
+  if (prefsReset) {
+    prefsReset.addEventListener('click', () => {
+      try { localStorage.removeItem(PREF_KEY); } catch (err) {}
+      syncUIFromPrefs();
+      applyPrefs();
+      setModal(prefsModal, false);
+    });
+  }
 })();
 </script>
 
 
+
 </body>
 </html>
-
-
-
